@@ -1,0 +1,48 @@
+{
+  "name": "ember-snippets",
+  "displayName": "Ember Snippets",
+  "publisher": "Exelord",
+  "version": "1.0.0",
+  "author": "Exelord",
+  "description": "Ember snippets super pack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Exelord/ember-snippets/issues"
+  },
+  "homepage": "https://github.com/Exelord/ember-snippets#readme",
+  "engines": {
+    "vscode": "^1.35.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Exelord/ember-snippets.git"
+  },
+  "keywords": [
+    "ember",
+    "snippets",
+    "vscode"
+  ],
+  "categories": [
+    "Snippets"
+  ],
+  "scripts": {
+    "build": "node compile.js",
+    "prepublishOnly": "npm run build"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./dist/vscode.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./dist/vscode.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "fs-extra": "^8.0.1",
+    "glob": "^7.1.3"
+  }
+}
