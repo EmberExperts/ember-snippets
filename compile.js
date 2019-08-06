@@ -4,13 +4,16 @@ const glob = require("glob");
 const path = require("path");
 const fs = require("fs-extra");
 
-const collections = [];
+function generateLanguageFile(language) {
+  const data = [];
 
-glob.sync("./src/**/*.js").forEach(function(file) {
-  collections.push(require(path.resolve(file)));
-});
+  glob.sync(`./src/${language}/**/*.js`).forEach(function(file) {
+    data.push(require(path.resolve(file)));
+  });
 
-const content = Object.assign({}, ...collections);
+  fs.outputJsonSync(`dist/${language}.json`, Object.assign({}, ...data), { spaces: 2 });
+}
 
 fs.emptyDirSync("dist");
-fs.outputJsonSync("dist/vscode.json", content, { spaces: 2 });
+generateLanguageFile("javascript");
+generateLanguageFile("handlebars");
