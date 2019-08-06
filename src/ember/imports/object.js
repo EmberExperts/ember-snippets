@@ -35,6 +35,12 @@ module.exports = {
     "body": "import { aliasMethod } from '@ember/object';",
     "description": "Ember.aliasMethod"
   },
+  "Ember.action": {
+    "prefix": "imaction",
+    
+    "body": "import { action } from '@ember/object';",
+    "description": "Ember Object Action"
+  },
   "Ember.computed": {
     "prefix": "imcomputed",
     
