@@ -53,5 +53,8 @@
 		"id": "d9109def-82de-4b57-ad2b-de9e6e5e47f0",
 		"publisherDisplayName": "exelord",
 		"publisherId": "9ecdee8c-a207-4f31-a31a-1937646f0e62"
+	},
+	"dependencies": {
+		"ember-rfc176-data": "^0.3.9"
 	}
 }
