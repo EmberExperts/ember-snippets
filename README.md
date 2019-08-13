@@ -194,15 +194,15 @@ task(function *() {
 ## Contribution
 Did I miss your favorite addon or snippet? It's super easy to contribute!
 
-1. Create a new folder in `src/javascript/addons` for JS or `src/handlebard/addons` for HBS with you addon name, eg. `my-addon`
-2. Create files like `cheets.js`, `imports.js` or `skeletons.js`
+1. Create a new folder in `src/javascript/addons` for JS or `src/handlebars/addons` for HBS with you addon name, eg. `my-addon`
+2. Create files like `cheats.js`, `imports.js` or `skeletons.js`
 3. Fill in the files with following structure:
  ```js
- module.exports = {
-  "[my-addon] superFunction": {
-  "prefix": "imsuperFunction",
-  "body": "import { superFunction } from 'my-addon';",
-  "description": "superFunction allows you to do super things"
-  },
- }
+  module.exports = {
+    "[my-addon] superFunction": {
+      "prefix": "imsuperFunction",
+      "body": "import { superFunction } from 'my-addon';",
+      "description": "superFunction allows you to do super things"
+    },
+  }
  ```
