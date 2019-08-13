@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Exelord/ember-snippets/master/icon.png" alt="Ember Snippets Logo">
+</p>
+
 # ember-snippets
 
 All-in-one snippets for Ember apps. Forget about syntax, focus on development.
