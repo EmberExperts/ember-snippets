@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Exelord/ember-snippets/master/icon.png" alt="Ember Snippets Logo">
+ <img src="https://raw.githubusercontent.com/Exelord/ember-snippets/master/icon.png" alt="Ember Snippets Logo">
 </p>
 
 # ember-snippets
@@ -9,11 +9,11 @@ All-in-one snippets for Ember apps. Forget about syntax, focus on development.
 Supported editors:
 - vscode: https://marketplace.visualstudio.com/items?itemName=exelord.ember-snippets
 
-**WARNING!** In most cases snippets are up-to-date which means they assumes you use latest Ember, Ember-data or any other addon with our snippets.
+**WARNING!** In most cases, snippets are up-to-date which means they assume you use the latest Ember, Ember-data or any other addon with our snippets.
 
 ## What's included?
 
-Following snippets are just a selected subset. Full list avaialble in the code: `src/**/`
+Following snippets are just a selected subset. Full list available in the code: `src/**/`
 
 ### Ember Snippets
 
@@ -38,77 +38,77 @@ run -> run(() => { });
 
 computed ->
 computed('property', function() {
-  // body
+ // body
 }),
 
 didDestroyElement ->
 didInsertElement() {
-  this._super(...arguments);
-  
+ this._super(...arguments);
+ 
 },
 ```
 
 #### 3. Skeletons
-Forget about generators. Just use the skeletos for anything, eg:
+Forget about generators. Just use the skeletons for anything, eg:
 ```
 component ->
 import Component from '@ember/component';
 
 export default Component.extend({
-  // body
+ // body
 });
 
 service ->
 import Service from '@ember/service';
 
 export default Service.extend({
-  // body
+ // body
 });
 
 helper ->
 import Helper from '@ember/component/helper';
 
 export default Helper.extend({
-  compute() {
-    // body
-  }
+ compute() {
+ // body
+ }
 });
 
 ```
 
 #### 4. Handlebars snippets
-Take the adventage of faster templating by using HBS snippets, eg:
+Take the advantage of faster templating by using HBS snippets, eg:
 ```
 yield -> {{yield}}
 
 debugger -> {{debugger}}
 
-on -> {{on  }}
+on -> {{on }}
 
 mut -> (mut )
 
 let ->
-{{#let  as ||}}
-  
+{{#let as ||}}
+ 
 {{/let}}
 
 if -> 
 {{#if }}
-  
+ 
 {{/if}}
 
 eachelse -> 
-{{#each  as ||}}
-  
+{{#each as ||}}
+ 
 {{else}}
-  
+ 
 {{/each}}
 
 input -> <Input @value= />
 
 linkto ->
 <LinkTo @route=>
-  
+ 
 </LinkTo> 
 ```
 
@@ -117,7 +117,7 @@ linkto ->
 #### Ember Data
 
 ##### Imports
-All imports according to latest RFC: https://emberjs.github.io/rfcs/0395-ember-data-packages.html
+All imports according to the latest RFC: https://emberjs.github.io/rfcs/0395-ember-data-packages.html
 
 Examples:
 
@@ -192,17 +192,17 @@ task(function *() {
 ```
 
 ## Contribution
-Did I missed your favourit addon or snippet? It's super easy to contribute!
+Did I miss your favorite addon or snippet? It's super easy to contribute!
 
 1. Create a new folder in `src/javascript/addons` for JS or `src/handlebard/addons` for HBS with you addon name, eg. `my-addon`
 2. Create files like `cheets.js`, `imports.js` or `skeletons.js`
 3. Fill in the files with following structure:
-   ```js
-    module.exports = {
-      "[my-addon] superFunction": {
-        "prefix": "imsuperFunction",
-        "body": "import { superFunction } from 'my-addon';",
-        "description": "superFunction allows you to do super things"
-      },
-    }
-   ```
+ ```js
+ module.exports = {
+  "[my-addon] superFunction": {
+  "prefix": "imsuperFunction",
+  "body": "import { superFunction } from 'my-addon';",
+  "description": "superFunction allows you to do super things"
+  },
+ }
+ ```
