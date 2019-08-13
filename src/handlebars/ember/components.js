@@ -10,8 +10,8 @@ module.exports = {
     "description": "The {{textarea}} helper lets you create an HTML <textarea /> component."
   },
   "[ember] link-to": {
-    "prefix": "link-to",
-    "body": "<LinkTo @route=${1}>\n\t${2}\n</LinkTo>",
+    "prefix": "linkto",
+    "body": "<LinkTo @route=\"${1}\">\n\t${2}\n</LinkTo>",
     "description": "The {{link-to}} component renders a link to the supplied routeName."
   },
 };
