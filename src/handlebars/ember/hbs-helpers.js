@@ -44,6 +44,11 @@ module.exports = {
     "body": "{{unless ${1} ${2} ${3}}}",
     "description": "[ember] unless"
   },
+  "[ember] else": {
+    "prefix": "else",
+    "body": "{{else}}",
+    "description": "[ember] unless"
+  },
   "[ember] #unless": {
     "prefix": "unless",
     "body": "{{#unless ${1}}}\n\t${2}\n{{/unless}}",
