@@ -1,7 +1,7 @@
 module.exports = {
   "[ember] Route Skeleton": {
     "prefix": "route",
-    "body": "import Route from '@ember/routing/route';\n\nexport default Route.extend({\n\n\tmodel() {\n\t\t${1:// body}\n\t}\n\n});",
+    "body": "import Route from '@ember/routing/route';\n\nexport default Route.extend({\n\t${1:// body}\n});",
     "description": "Route Skeleton"
   },
   "[ember] Controller Skeleton": {
