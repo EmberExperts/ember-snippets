@@ -47,7 +47,7 @@ module.exports = {
   "[ember] else": {
     "prefix": "else",
     "body": "{{else}}",
-    "description": "[ember] unless"
+    "description": "[ember] else"
   },
   "[ember] #unless": {
     "prefix": "unless",

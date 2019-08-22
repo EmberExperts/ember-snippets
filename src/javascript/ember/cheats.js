@@ -1,9 +1,4 @@
 module.exports = {
-  "[ember] run(() => { ... })": {
-    "prefix": "run",
-    "body": "run(() => {\n\t${1}\n});",
-    "description": "run(() => { ... })"
-  },
   "[ember] set(...)": {
     "prefix": "set",
     "body": "set(${1:this}, '${2}', ${3});",
@@ -266,22 +261,22 @@ module.exports = {
   },
   "[ember] Route: setupController(...) { ... }": {
     "prefix": "setupController",
-    "body": "setupController(controller, model) {\n\tthis._super(controller, model);\n\t${1}\n},\n",
+    "body": "setupController(controller, model) {\n\tthis._super(controller, model);\n\t${1}\n},",
     "description": "Route: setupController(...) { ... }"
   },
   "[ember] Route: beforeModel(...) { ... }": {
     "prefix": "beforeModel",
-    "body": "beforeModel(transition) {\n\tthis._super(controller, model);\n\t${1}\n},\n",
+    "body": "beforeModel(transition) {\n\tthis._super(controller, model);\n\t${1}\n},",
     "description": "Route: beforeModel(...) { ... }"
   },
   "[ember] Route: afterModel(...) { ... }": {
     "prefix": "afterModel",
-    "body": "afterModel(model, transition) {\n\tthis._super(controller, model);\n\t${1}\n},\n",
+    "body": "afterModel(model, transition) {\n\tthis._super(controller, model);\n\t${1}\n},",
     "description": "Route: afterModel(...) { ... }"
   },
   "[ember] Component: didReceiveAttrs() { ... }": {
     "prefix": "didReceiveAttrs",
-    "body": "didReceiveAttrs() {\n\tthis._super(...arguments);\n\t${1}\n},\n",
+    "body": "didReceiveAttrs() {\n\tthis._super(...arguments);\n\t${1}\n},",
     "description": "Component: didReceiveAttrs() { ... }"
   },
   "[ember] Component: didRender() { ... }": {
@@ -318,40 +313,5 @@ module.exports = {
     "prefix": "didDestroyElement",
     "body": "didDestroyElement() {\n\tthis._super(...arguments);\n\t${1}\n},",
     "description": "Component: didDestroyElement() { ... }"
-  },
-  "[ember] .filterBy(...)": {
-    "prefix": "filterBy",
-    "body": "${1:enumerable}.filterBy('${2:property}', ${3:value});",
-    "description": ".filterBy(...)"
-  },
-  "[ember] .mapBy(...)": {
-    "prefix": "mapBy",
-    "body": "${1:enumerable}.mapBy('${2:property}');",
-    "description": ".mapBy(...)"
-  },
-  "[ember] .every(...)": {
-    "prefix": "every",
-    "body": "${1:enumerable}.every(function(${2:item}) {\n\t${3}\n});",
-    "description": ".every(...)"
-  },
-  "[ember] .isEvery(...)": {
-    "prefix": "is-every",
-    "body": "${1:enumerable}.isEvery('${2:property}', ${3:bool});",
-    "description": ".isEvery(...)"
-  },
-  "[ember] .some(...)": {
-    "prefix": "some",
-    "body": "${1:enumerable}.some(function(${2:item}) {\n\t${3}\n});",
-    "description": ".some(...)"
-  },
-  "[ember] .isAny(...)": {
-    "prefix": "is-any",
-    "body": "${1:enumerable}.isAny('${2:property}', ${3:bool});",
-    "description": ".isAny(...)"
-  },
-  "[ember] .toArray(...)": {
-    "prefix": "to-array",
-    "body": "${1:enumerable}.toArray();",
-    "description": ".toArray(...)"
-  },
+  }
 };
