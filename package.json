@@ -63,6 +63,7 @@
     "ember-rfc176-data": "^0.3.11",
     "fs-extra": "^8.1.0",
     "glob": "^7.1.4",
-    "release-it": "^12.3.5"
+    "release-it": "^12.3.5",
+    "vsce": "^1.66.0"
   }
 }
