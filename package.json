@@ -61,10 +61,10 @@
   },
   "devDependencies": {
     "@ember-data/rfc395-data": "0.0.4",
-    "ember-rfc176-data": "^0.3.11",
+    "ember-rfc176-data": "^0.3.12",
     "fs-extra": "^8.1.0",
-    "glob": "^7.1.4",
-    "release-it": "^12.3.5",
-    "vsce": "^1.66.0"
+    "glob": "^7.1.5",
+    "release-it": "^12.4.3",
+    "vsce": "^1.68.0"
   }
 }
