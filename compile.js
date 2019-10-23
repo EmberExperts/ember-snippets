@@ -5,7 +5,6 @@ const path = require("path");
 const fs = require("fs-extra");
 
 const pathRegexp = /\.\/src\/(?<language>[^/\s]+)\/(?<module>[^/\s]+)\/(([^\s/]+\/)+)?(?<name>[^/\s.]+)(\.?(?<ext>[^/\s.]+))?/;
-const placeholderRegexp = /\${\d+:?(?<placeholder>\S+)?}/g;
 
 function generateLanguageFile(language) {
   const data = [];
