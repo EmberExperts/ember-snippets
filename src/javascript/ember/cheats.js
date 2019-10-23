@@ -1,315 +1,315 @@
 module.exports = {
-  "[ember] set(...)": {
+  "set(...)": {
     "prefix": "set",
     "body": "set(${1:this}, '${2}', ${3});",
     "description": "set(...)"
   },
-  "[ember] get(...)": {
+  "get(...)": {
     "prefix": "get",
     "body": "get(${1:this}, '${2}');",
     "description": "get(...)"
   },
-  "[ember] this._super(...)": {
+  "this._super(...)": {
     "prefix": "super",
     "body": "this._super(...arguments);",
     "description": "this._super(...)"
   },
-  "[ember] init() { ... }": {
+  "init() { ... }": {
     "prefix": "init",
     "body": "init() {\n\tthis._super(...arguments);\n\t${1}\n},",
     "description": "init() { ... }"
   },
-  "[ember] service(...)": {
+  "service(...)": {
     "prefix": "service",
     "body": "service(${1}),",
     "description": "service(...)"
   },
-  "[ember] observer(...)": {
+  "observer(...)": {
     "prefix": "observer",
     "body": "observer('${1:property}', function() {\n\t${2:// body}\n}),",
     "description": "observer(...)"
   },
-  "[ember] on(...)": {
+  "on(...)": {
     "prefix": "on",
     "body": "on('${1:property}', function() {\n\t${2:// body}\n}),",
     "description": "on(...)"
   },
-  "[ember] actions: { ... }": {
+  "actions: { ... }": {
     "prefix": "actions",
-    "[ember] body": "actions: {\n\t${1:// body}\n}",
-    "[ember] description": "actions: { ... }"
+    "body": "actions: {\n\t${1:// body}\n}",
+    "description": "actions: { ... }"
   },
-  "[ember] computed(...)": {
+  "computed(...)": {
     "prefix": "computed",
     "body": "computed('${1:property}', function() {\n\t${2:// body}\n}),",
     "description": "computed(...)"
   },
-  "[ember] action(...)": {
+  "action(...)": {
     "prefix": "action",
     "body": "action(function() {\n\t${2}\n}),",
     "description": "action(...)"
   },
-  "[ember] alias(...)": {
+  "alias(...)": {
     "prefix": "calias",
     "body": "alias('${1:key}');",
     "description": "alias(...)"
   },
-  "[ember] and(...)": {
+  "and(...)": {
     "prefix": "cand",
     "body": "and('${1:key1}', '${2:key2}');",
     "description": "and(...)"
   },
-  "[ember] bool(...)": {
+  "bool(...)": {
     "prefix": "cbool",
     "body": "bool(${1:key});",
     "description": "bool(...)"
   },
-  "[ember] collect(...)": {
+  "collect(...)": {
     "prefix": "ccollect",
     "body": "collect(${1:keys});",
     "description": "collect(...)"
   },
-  "[ember] empty(...)": {
+  "empty(...)": {
     "prefix": "cempty",
     "body": "empty('${1:key}');",
     "description": "empty(...)"
   },
-  "[ember] equal(...)": {
+  "equal(...)": {
     "prefix": "cequal",
     "body": "equal('${1:key}', ${2:value});",
     "description": "equal(...)"
   },
-  "[ember] filter(...)": {
+  "filter(...)": {
     "prefix": "cfilter",
     "body": "filter(${1:key}, function(${2:item}${3:, index}) {\n  return ${2:item};\n}));",
     "description": "filter(...)"
   },
-  "[ember] filterBy(...)": {
+  "filterBy(...)": {
     "prefix": "cfilterBy",
     "body": "filterBy('${1:key}', ${2:propertyKey}, ${3:value});",
     "description": "filterBy(...)"
   },
-  "[ember] gt(...)": {
+  "gt(...)": {
     "prefix": "cgt",
     "body": "gt('${1:key}', ${2:value});",
     "description": "gt(...)"
   },
-  "[ember] gte(...)": {
+  "gte(...)": {
     "prefix": "cgte",
     "body": "gte('${1:key}', ${2:value});",
     "description": "gte(...)"
   },
-  "[ember] intersect(...)": {
+  "intersect(...)": {
     "prefix": "intersect",
     "body": "intersect('${1:key1}', '${2:key2}');",
     "description": "intersect(...)"
   },
-  "[ember] lt(...)": {
+  "lt(...)": {
     "prefix": "clt",
     "body": "lt('${1:key}', ${2:value});",
     "description": "lt(...)"
   },
-  "[ember] lte(...)": {
+  "lte(...)": {
     "prefix": "clte",
     "body": "lte('${1:key}', ${2:value});",
     "description": "lte(...)"
   },
-  "[ember] map(...)": {
+  "map(...)": {
     "prefix": "cmap",
     "body": "map(${1:key}, function(${2:item}${3:, index}) {\n  return ${2:item};\n}));",
     "description": "map(...)"
   },
-  "[ember] mapBy(...)": {
+  "mapBy(...)": {
     "prefix": "cmapBy",
     "body": "mapBy('${1:key}', '${2:propertyKey}');",
     "description": "mapBy(...)"
   },
-  "[ember] match(...)": {
+  "match(...)": {
     "prefix": "cmatch",
     "body": "match('${1:key}', ${2:regEx});",
     "description": "match(...)"
   },
-  "[ember] max(...)": {
+  "max(...)": {
     "prefix": "cmax",
     "body": "max('${1:key}');",
     "description": "max(...)"
   },
-  "[ember] min(...)": {
+  "min(...)": {
     "prefix": "cmin",
     "body": "min('${1:key}');",
     "description": "min(...)"
   },
-  "[ember] none(...)": {
+  "none(...)": {
     "prefix": "cnone",
     "body": "none('${1:key}');",
     "description": "none(...)"
   },
-  "[ember] not(...)": {
+  "not(...)": {
     "prefix": "cnot",
     "body": "not('${1:key}');",
     "description": "not(...)"
   },
-  "[ember] notEmpty(...)": {
+  "notEmpty(...)": {
     "prefix": "cnotEmpty",
     "body": "notEmpty('${1:key}');",
     "description": "notEmpty(...)"
   },
-  "[ember] oneWay(...)": {
+  "oneWay(...)": {
     "prefix": "coneWay",
     "body": "oneWay('${1:key}');",
     "description": "oneWay(...)"
   },
-  "[ember] or(...)": {
+  "or(...)": {
     "prefix": "cor",
     "body": "or('${1:key1}', '${2:key2}');",
     "description": "or(...)"
   },
-  "[ember] readOnly(...)": {
+  "readOnly(...)": {
     "prefix": "creadOnly",
     "body": "readOnly('${1:key}');",
     "description": "readOnly(...)"
   },
-  "[ember] reads(...)": {
+  "reads(...)": {
     "prefix": "creads",
     "body": "reads('${1:key}');",
     "description": "reads(...)"
   },
-  "[ember] setDiff(...)": {
+  "setDiff(...)": {
     "prefix": "csetDiff",
     "body": "setDiff('${1:key1}', '${2:key2}');",
     "description": "setDiff(...)"
   },
-  "[ember] sort(...)": {
+  "sort(...)": {
     "prefix": "csort",
     "body": "sort('${1:itemsKey}', '${2:sortDefinition}');",
     "description": "sort(...)"
   },
-  "[ember] sum(...)": {
+  "sum(...)": {
     "prefix": "csum",
     "body": "sum('${1:key}');",
     "description": "sum(...)"
   },
-  "[ember] union(...)": {
+  "union(...)": {
     "prefix": "cunion",
     "body": "union('${1:key1}', '${2:key2}');",
     "description": "union(...)"
   },
-  "[ember] uniq(...)": {
+  "uniq(...)": {
     "prefix": "cuniq",
     "body": "uniq('${1:key}', '${2:propertyKey}');",
     "description": "uniq(...)"
   },
-  "[ember] uniqBy(...)": {
+  "uniqBy(...)": {
     "prefix": "cuniqBy",
     "body": "uniqBy('${1:key}');",
     "description": "uniqBy(...)"
   },
-  "[ember] bind(...)": {
+  "bind(...)": {
     "prefix": "bind",
     "body": "bind(${1:this}, ${2:this.methodName});",
     "description": "bind(...)"
   },
-  "[ember] cancel(...)": {
+  "cancel(...)": {
     "prefix": "cancel",
     "body": "cancel('${1:key}');",
     "description": "cancel(...)"
   },
-  "[ember] debounce(...)": {
+  "debounce(...)": {
     "prefix": "debounce",
     "body": "debounce(${1:this}, '${2:methodName}', ${3:500});",
     "description": "debounce(...)"
   },
-  "[ember] later(...)": {
+  "later(...)": {
     "prefix": "later",
     "body": "later(${1:this}, () => { ${2}\\}, ${3:500});",
     "description": "later(...)"
   },
-  "[ember] next(...)": {
+  "next(...)": {
     "prefix": "next",
     "body": "next(${1:this}, () => { ${2}\\});",
     "description": "next(...)"
   },
-  "[ember] once(...)": {
+  "once(...)": {
     "prefix": "once",
     "body": "once(${1:this}, () => { ${2}\\});",
     "description": "once(...)"
   },
-  "[ember] run(...)": {
+  "run(...)": {
     "prefix": "run",
     "body": "run(() => { ${1}\\});",
     "description": "run(...)"
   },
-  "[ember] schedule(...)": {
+  "schedule(...)": {
     "prefix": "schedule",
     "body": "schedule('${1:queue}', ${2:this}, () => { ${3}\\}, );",
     "description": "schedule(...)"
   },
-  "[ember] scheduleOnce(...)": {
+  "scheduleOnce(...)": {
     "prefix": "scheduleOnce",
     "body": "scheduleOnce('${1:queue}', ${2:this}, () => { ${3}\\}, );",
     "description": "scheduleOnce(...)"
   },
-  "[ember] throttle(...)": {
+  "throttle(...)": {
     "prefix": "throttle",
     "body": "throttle(${1:this}, '${2:methodName}', ${3:500});",
     "description": "throttle(...)"
   },
-  "[ember] Route: model(...) { ... }": {
+  "Route: model(...) { ... }": {
     "prefix": "model",
     "body": "model(params = {}) {\n\treturn this.store.query('${1}', params);\n},",
     "description": "Route: model(...) { ... }"
   },
-  "[ember] Route: setupController(...) { ... }": {
+  "Route: setupController(...) { ... }": {
     "prefix": "setupController",
     "body": "setupController(controller, model) {\n\tthis._super(controller, model);\n\t${1}\n},",
     "description": "Route: setupController(...) { ... }"
   },
-  "[ember] Route: beforeModel(...) { ... }": {
+  "Route: beforeModel(...) { ... }": {
     "prefix": "beforeModel",
     "body": "beforeModel(transition) {\n\tthis._super(controller, model);\n\t${1}\n},",
     "description": "Route: beforeModel(...) { ... }"
   },
-  "[ember] Route: afterModel(...) { ... }": {
+  "Route: afterModel(...) { ... }": {
     "prefix": "afterModel",
     "body": "afterModel(model, transition) {\n\tthis._super(controller, model);\n\t${1}\n},",
     "description": "Route: afterModel(...) { ... }"
   },
-  "[ember] Component: didReceiveAttrs() { ... }": {
+  "Component: didReceiveAttrs() { ... }": {
     "prefix": "didReceiveAttrs",
     "body": "didReceiveAttrs() {\n\tthis._super(...arguments);\n\t${1}\n},",
     "description": "Component: didReceiveAttrs() { ... }"
   },
-  "[ember] Component: didRender() { ... }": {
+  "Component: didRender() { ... }": {
     "prefix": "didRender",
     "body": "didRender() {\n\tthis._super(...arguments);\n\t${1}\n},",
     "description": "Component: didRender() { ... }"
   },
-  "[ember] Component: didUpdateAttrs() { ... }": {
+  "Component: didUpdateAttrs() { ... }": {
     "prefix": "didUpdateAttrs",
     "body": "didUpdateAttrs() {\n\tthis._super(...arguments);\n\t${1}\n},",
     "description": "Component: didUpdateAttrs() { ... }"
   },
-  "[ember] Component: willUpdate() { ... }": {
+  "Component: willUpdate() { ... }": {
     "prefix": "willUpdate",
     "body": "willUpdate() {\n\tthis._super(...arguments);\n\t${1}\n},",
     "description": "Component: willUpdate() { ... }"
   },
-  "[ember] Component: didInsertElement() { ... }": {
+  "Component: didInsertElement() { ... }": {
     "prefix": "didInsertElement",
     "body": "didInsertElement() {\n\tthis._super(...arguments);\n\t${1}\n},",
     "description": "Component: didInsertElement() { ... }"
   },
-  "[ember] Component: willDestroyElement() { ... }": {
+  "Component: willDestroyElement() { ... }": {
     "prefix": "willDestroyElement",
     "body": "willDestroyElement() {\n\tthis._super(...arguments);\n\t${1}\n},",
     "description": "Component: willDestroyElement() { ... }"
   },
-  "[ember] Component: willClearElement() { ... }": {
+  "Component: willClearElement() { ... }": {
     "prefix": "willClearElement",
     "body": "willClearElement() {\n\tthis._super(...arguments);\n\t${1}\n},",
     "description": "Component: willClearElement() { ... }"
   },
-  "[ember] Component: didDestroyElement() { ... }": {
+  "Component: didDestroyElement() { ... }": {
     "prefix": "didDestroyElement",
     "body": "didDestroyElement() {\n\tthis._super(...arguments);\n\t${1}\n},",
     "description": "Component: didDestroyElement() { ... }"

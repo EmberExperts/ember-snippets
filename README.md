@@ -192,9 +192,9 @@ task(function *() {
 ```
 
 ## Contribution
-Did I miss your favorite addon or snippet? It's super easy to contribute!
+Is this package missing your favorite addon or snippet? It's super easy to contribute!
 
-1. Create a new folder in `src/javascript/addons` for JS or `src/handlebars/addons` for HBS with you addon name, eg. `my-addon`
+1. Create a new folder in `src/javascript` for JS or `src/handlebars` for HBS with you addon name, eg. `my-addon`
 2. Create files like `cheats.js`, `imports.js` or `skeletons.js`
 3. Fill in the files with following structure:
  ```js

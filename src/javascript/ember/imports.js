@@ -30,7 +30,7 @@ const imports = {};
 
 data.forEach((object) => {
   if (!object.deprecated) {
-    imports[`[ember] ${object.global || "NOGLOBAL"}`] = {
+    imports[`${object.global || "NOGLOBAL"}`] = {
       prefix: `im${object.localName || object.export}`,
       body: `import ${getImport(object)} from '${object.module}';`,
       description: object.global
