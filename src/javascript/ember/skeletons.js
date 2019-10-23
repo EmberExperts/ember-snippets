@@ -5,7 +5,7 @@ module.exports = {
     "description": "Route Skeleton"
   },
   "[ember] ES6 Route Skeleton": {
-    "prefix": "service",
+    "prefix": "route",
     "body": "import classic from 'ember-classic-decorator';\nimport Route from '@ember/routing/route';\n\n@classic\nclass ${1}Route extends Route {\n\t${2}\n}\n\nexport default ${1}Route;",
     "description": "ES6 Route Skeleton"
   },
@@ -15,7 +15,7 @@ module.exports = {
     "description": "Controller Skeleton"
   },
   "[ember] ES6 Controller Skeleton": {
-    "prefix": "service",
+    "prefix": "controller",
     "body": "import classic from 'ember-classic-decorator';\nimport Controller from '@ember/controller';\n\n@classic\nclass ${1}Controller extends Controller {\n\t${2}\n}\n\nexport default ${1}Controller;",
     "description": "ES6 Controller Skeleton"
   },
