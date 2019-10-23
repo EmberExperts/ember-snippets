@@ -1,8 +1,9 @@
 .vscode/**
 .vscode-test/**
-src/**
-docs/**
-node_modules/**
+src/
+snippets/
+docs/
+node_modules/
 .gitignore
 .eslintrc.js
 compile.js

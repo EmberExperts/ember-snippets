@@ -3,8 +3,9 @@
 const glob = require("glob");
 const path = require("path");
 const fs = require("fs-extra");
+const CSON = require("cson");
 
-const pathRegexp = /\.\/src\/(?<language>[^/\s]+)\/(?<module>[^/\s]+)\/(([^\s/]+\/)+)?(?<name>[^/\s.]+)(\.?(?<ext>[^/\s.]+))?/;
+const pathRegexp = /\.\/src\/(?<language>[^/\s]+)\/(?<module>\S+)\/(?<name>[^/\s.]+)(\.?(?<ext>[^/\s.]+))?/;
 
 function generateLanguageFile(language) {
   const data = [];
@@ -14,17 +15,32 @@ function generateLanguageFile(language) {
     const transformedContent = {};
     const { module } = file.match(pathRegexp).groups;
 
-    Object.keys(fileContent).forEach((key) => {
-      transformedContent[`[${module}] ${key}`] = fileContent[key];
+    Object.entries(fileContent).forEach(([key, item]) => {
+      transformedContent[`[${module}] ${key}`] = {
+        prefix: item.prefix,
+        body: item.body,
+        description: item.description || key
+      };
     });
 
     data.push(transformedContent);
   });
 
+  // VSCODE
   fs.outputJsonSync(`dist/${language}.json`, Object.assign({}, ...data), { spaces: 2 });
+
+  // ATOM
+  const langMapping = {
+    javascript: ".source.js, .source.ts",
+    handlebars: ".text.html.handlebars"
+  };
+
+  const atomKey = langMapping[language];
+
+  fs.outputFileSync(`snippets/${language}.cson`, CSON.stringify({ [atomKey]: Object.assign({}, ...data) }));
 }
 
-function generateReadme() {
+function generateDocs() {
   glob.sync("./src/**/*.js").forEach(function(file) {
     const toc = [];
     const readMe = [];
@@ -46,7 +62,7 @@ function generateReadme() {
       readMe.push(`**Prefix:** \`${value.prefix}\`\n`);
       readMe.push("**Description**:");
       readMe.push("```");
-      readMe.push(value.description);
+      readMe.push(value.description || key);
       readMe.push("```");
       readMe.push("**Generated code**:");
       readMe.push(`\`\`\`${ext}`);
@@ -67,4 +83,4 @@ generateLanguageFile("javascript");
 generateLanguageFile("handlebars");
 
 fs.emptyDirSync("docs");
-generateReadme();
+generateDocs();
