@@ -1,5 +1,21 @@
-# handlebars
-## ember
+# handlebars - ember
+## Table of Contents
+- [action](#action)
+- [array](#array)
+- [hash](#hash)
+- [component](#component)
+- [#component](#component)
+- [concat](#concat)
+- [debugger](#debugger)
+- [fn](#fn)
+- [get](#get)
+- [let](#let)
+- [mount](#mount)
+- [mut](#mut)
+- [on](#on)
+- [outlet](#outlet)
+- [query-params](#queryparams)
+## Snippets
 ### `action`
 **Prefix:** `action`
 

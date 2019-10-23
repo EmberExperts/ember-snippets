@@ -1,5 +1,13 @@
-# javascript
-## ember-concurrency
+# javascript - ember-concurrency
+## Table of Contents
+- [didCancel](#didcancel)
+- [task](#task)
+- [taskGroup](#taskgroup)
+- [timeout](#timeout)
+- [waitForEvent](#waitforevent)
+- [waitForProperty](#waitforproperty)
+- [waitForQueue](#waitforqueue)
+## Snippets
 ### `didCancel`
 **Prefix:** `imdidCancel`
 

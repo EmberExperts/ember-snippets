@@ -26,14 +26,17 @@ function generateLanguageFile(language) {
 
 function generateReadme() {
   glob.sync("./src/**/*.js").forEach(function(file) {
+    const toc = [];
     const readMe = [];
     const fileContent = require(path.resolve(file));
     const { language, module, name, ext } = file.match(pathRegexp).groups;
-    
-    readMe.push(`# ${language}`);
-    readMe.push(`## ${module}`);
+    const mdFilePath = `docs/${language}/${module}/${name}.md`;
 
     Object.entries(fileContent).forEach(([key, value]) => {
+      const anchor = key.replace(/[^\w\s]+/g, "").replace(/\s/g, "-").toLowerCase();
+      
+      toc.push({ key, link: `#${anchor}`});
+      
       const body = value.body
         .replace(/(?<=\${\d+:\S+)}/g, "")
         .replace(/\${\d+:?}?/g, "")
@@ -50,8 +53,12 @@ function generateReadme() {
       readMe.push(`${body}`);
       readMe.push("```");
     });
-
-    fs.outputFileSync(`docs/${language}/${module}/${name}.md`, readMe.join("\n"));
+    
+    readMe.unshift("## Snippets");
+    readMe.unshift(toc.map((el) => `- [${el.key}](${el.link})`).join("\n"));
+    readMe.unshift("## Table of Contents");
+    readMe.unshift(`# ${language} - ${module}`);
+    fs.outputFileSync(mdFilePath, readMe.join("\n"));
   });
 }
 

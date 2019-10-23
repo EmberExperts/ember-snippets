@@ -1,5 +1,22 @@
-# javascript
-## ember-data
+# javascript - ember-data
+## Table of Contents
+- [Model Skeleton](#model-skeleton)
+- [ES6 Model Skeleton](#es6-model-skeleton)
+- [Adapter Skeleton](#adapter-skeleton)
+- [ES6 Adapter Skeleton](#es6-adapter-skeleton)
+- [REST Adapter Skeleton](#rest-adapter-skeleton)
+- [ES6 REST Adapter Skeleton](#es6-rest-adapter-skeleton)
+- [JSON API Adapter Skeleton](#json-api-adapter-skeleton)
+- [ES6 JSON API Adapter Skeleton](#es6-json-api-adapter-skeleton)
+- [Serializer Skeleton](#serializer-skeleton)
+- [ES6 Serializer Skeleton](#es6-serializer-skeleton)
+- [REST Serializer Skeleton](#rest-serializer-skeleton)
+- [ES6 REST Serializer Skeleton](#es6-rest-serializer-skeleton)
+- [JSON API Serializer Skeleton](#json-api-serializer-skeleton)
+- [ES6 JSON API Serializer Skeleton](#es6-json-api-serializer-skeleton)
+- [Transform Serializer Skeleton](#transform-serializer-skeleton)
+- [ES6 Transform Serializer Skeleton](#es6-transform-serializer-skeleton)
+## Snippets
 ### `Model Skeleton`
 **Prefix:** `model`
 

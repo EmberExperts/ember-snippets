@@ -1,5 +1,9 @@
-# handlebars
-## ember
+# handlebars - ember
+## Table of Contents
+- [input](#input)
+- [textarea](#textarea)
+- [link-to](#linkto)
+## Snippets
 ### `input`
 **Prefix:** `input`
 

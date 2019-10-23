@@ -1,5 +1,12 @@
-# javascript
-## ember-data
+# javascript - ember-data
+## Table of Contents
+- [findAll(...)](#findall)
+- [findRecord(...)](#findrecord)
+- [peekAll(...)](#peekall)
+- [peekRecord(...)](#peekrecord)
+- [query(...)](#query)
+- [queryRecord(...)](#queryrecord)
+## Snippets
 ### `findAll(...)`
 **Prefix:** `findAll`
 

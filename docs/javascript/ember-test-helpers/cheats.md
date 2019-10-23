@@ -1,5 +1,29 @@
-# javascript
-## ember-test-helpers
+# javascript - ember-test-helpers
+## Table of Contents
+- [await click(...)](#await-click)
+- [await doubleClick(...)](#await-doubleclick)
+- [await tap(...)](#await-tap)
+- [await focus(...)](#await-focus)
+- [await blur(...)](#await-blur)
+- [await triggerKeyEvent(...)](#await-triggerkeyevent)
+- [await triggerEvent(...)](#await-triggerevent)
+- [await fillIn(...)](#await-fillin)
+- [await find(...)](#await-find)
+- [await findAll(...)](#await-findall)
+- [getRootElement()](#getrootelement)
+- [await visit(...)](#await-visit)
+- [currentRouteName()](#currentroutename)
+- [currentURL(...)](#currenturl)
+- [await render(...)](#await-render)
+- [await clearRender()](#await-clearrender)
+- [await waitFor(...)](#await-waitfor)
+- [await waitUntil(...)](#await-waituntil)
+- [await settled()](#await-settled)
+- [isSettled()](#issettled)
+- [getSettledState()](#getsettledstate)
+- [await this.pauseTest(...)](#await-thispausetest)
+- [andThen(...)](#andthen)
+## Snippets
 ### `await click(...)`
 **Prefix:** `click`
 

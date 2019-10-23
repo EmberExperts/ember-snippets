@@ -1,5 +1,21 @@
-# handlebars
-## ember
+# handlebars - ember
+## Table of Contents
+- [#each](#each)
+- [#each-in](#eachin)
+- [#each/else](#eachelse)
+- [#if hasBlock](#if-hasblock)
+- [#if hasBlockParams](#if-hasblockparams)
+- [if](#if)
+- [#if](#if)
+- [#if/else](#ifelse)
+- [unless](#unless)
+- [else](#else)
+- [#unless](#unless)
+- [#unless/else](#unlesselse)
+- [with](#with)
+- [log](#log)
+- [yield](#yield)
+## Snippets
 ### `#each`
 **Prefix:** `each`
 

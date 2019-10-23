@@ -1,5 +1,23 @@
-# javascript
-## ember
+# javascript - ember
+## Table of Contents
+- [Route Skeleton](#route-skeleton)
+- [ES6 Route Skeleton](#es6-route-skeleton)
+- [Controller Skeleton](#controller-skeleton)
+- [ES6 Controller Skeleton](#es6-controller-skeleton)
+- [Service Skeleton](#service-skeleton)
+- [ES6 Service Skeleton](#es6-service-skeleton)
+- [Classic Component Skeleton](#classic-component-skeleton)
+- [Glimmer Component Skeleton](#glimmer-component-skeleton)
+- [ES6 Classic Component Skeleton](#es6-classic-component-skeleton)
+- [Mixin Skeleton](#mixin-skeleton)
+- [ES6 Mixin Skeleton](#es6-mixin-skeleton)
+- [Object Skeleton](#object-skeleton)
+- [ES6 Object Skeleton](#es6-object-skeleton)
+- [Bound Helper Skeleton](#bound-helper-skeleton)
+- [Helper Skeleton](#helper-skeleton)
+- [ES6 Helper Skeleton](#es6-helper-skeleton)
+- [Initializer Skeleton](#initializer-skeleton)
+## Snippets
 ### `Route Skeleton`
 **Prefix:** `route`
 
