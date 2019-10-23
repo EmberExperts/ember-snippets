@@ -9,7 +9,7 @@ Returns true if the object passed to it is a TaskCancelation error.
 ```
 **Generated code**:
 ```js
-didCancel(${1:error})
+didCancel(error)
 ```
 ### `task(...)`
 **Prefix:** `task`
@@ -44,7 +44,7 @@ Yielding timeout(ms) will pause a task for the duration of time passed in, in mi
 ```
 **Generated code**:
 ```js
-yield timeout(${1:0});
+yield timeout(0);
 ```
 ### `waitForEvent(eventName)`
 **Prefix:** `waitForEvent`
@@ -55,7 +55,7 @@ Use waitForEvent to pause the task until an event is fired.
 ```
 **Generated code**:
 ```js
-yield waitForEvent(${1:eventName});
+yield waitForEvent(eventName);
 ```
 ### `waitForProperty(propertyName)`
 **Prefix:** `waitForProperty`
@@ -66,7 +66,7 @@ Use waitForProperty to pause the task until a property on an object changes to s
 ```
 **Generated code**:
 ```js
-yield waitForProperty(${1:propertyName});
+yield waitForProperty(propertyName);
 ```
 ### `waitForQueue(queueName)`
 **Prefix:** `waitForQueue`
@@ -77,5 +77,5 @@ Use waitForQueue to pause the task until a certain run loop queue is reached.
 ```
 **Generated code**:
 ```js
-yield waitForQueue(${1:queueName});
+yield waitForQueue(queueName);
 ```

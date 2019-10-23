@@ -9,7 +9,7 @@ await click(...)
 ```
 **Generated code**:
 ```js
-await click('${1:selector}');
+await click('selector');
 ```
 ### `await doubleClick(...)`
 **Prefix:** `doubleClick`
@@ -20,7 +20,7 @@ await doubleClick(...)
 ```
 **Generated code**:
 ```js
-await doubleClick('${1:selector}');
+await doubleClick('selector');
 ```
 ### `await tap(...)`
 **Prefix:** `tap`
@@ -31,7 +31,7 @@ await tap(...)
 ```
 **Generated code**:
 ```js
-await tap('${1:selector}');
+await tap('selector');
 ```
 ### `await focus(...)`
 **Prefix:** `focus`
@@ -42,7 +42,7 @@ await focus(...)
 ```
 **Generated code**:
 ```js
-await focus('${1:selector}');
+await focus('selector');
 ```
 ### `await blur(...)`
 **Prefix:** `blur`
@@ -53,7 +53,7 @@ await blur(...)
 ```
 **Generated code**:
 ```js
-await blur('${1:selector}');
+await blur('selector');
 ```
 ### `await triggerKeyEvent(...)`
 **Prefix:** `triggerKeyEvent`
@@ -64,7 +64,7 @@ await triggerKeyEvent(...)
 ```
 **Generated code**:
 ```js
-await triggerKeyEvent('${1:sel}', '${2:type}', '${3:key}', '${4:mods}');
+await triggerKeyEvent('sel', 'type', 'key', 'mods');
 ```
 ### `await triggerEvent(...)`
 **Prefix:** `triggerEvent`
@@ -75,7 +75,7 @@ await triggerEvent(...)
 ```
 **Generated code**:
 ```js
-await triggerEvent('${1:selector}', '${2:type}', '${3:options}');
+await triggerEvent('selector', 'type', 'options');
 ```
 ### `await fillIn(...)`
 **Prefix:** `fillIn`
@@ -86,7 +86,7 @@ await fillIn(...)
 ```
 **Generated code**:
 ```js
-await fillIn('${1:selector}', '${2:text}');
+await fillIn('selector', 'text');
 ```
 ### `await find(...)`
 **Prefix:** `find`
@@ -97,7 +97,7 @@ await find(...)
 ```
 **Generated code**:
 ```js
-find('${1:selector}');
+find('selector');
 ```
 ### `await findAll(...)`
 **Prefix:** `findAll`
@@ -108,7 +108,7 @@ await findAll(...)
 ```
 **Generated code**:
 ```js
-findAll('${1:selector}');
+findAll('selector');
 ```
 ### `getRootElement()`
 **Prefix:** `getRootElement`
@@ -130,7 +130,7 @@ await visit(...)
 ```
 **Generated code**:
 ```js
-await visit('${1:url}');
+await visit('url');
 ```
 ### `currentRouteName()`
 **Prefix:** `currentRouteName`
@@ -185,7 +185,7 @@ await waitFor(...)
 ```
 **Generated code**:
 ```js
-await waitFor('${1:selector}'${2:, { timeout: 1000, count: 1 \}});
+await waitFor('selector', { timeout: 1000, count: 1 \}});
 ```
 ### `await waitUntil(...)`
 **Prefix:** `waitUntil`
@@ -196,7 +196,7 @@ await waitUntil(...)
 ```
 **Generated code**:
 ```js
-await waitUntil(() => { $1; }${2:, { timeout: 1000 \}});
+await waitUntil(() => { $1; }, { timeout: 1000 \}});
 ```
 ### `await settled()`
 **Prefix:** `settled`

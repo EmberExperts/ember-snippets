@@ -5,6 +5,7 @@ const path = require("path");
 const fs = require("fs-extra");
 
 const pathRegexp = /\.\/src\/(?<language>[^/\s]+)\/(?<module>[^/\s]+)\/(([^\s/]+\/)+)?(?<name>[^/\s.]+)(\.?(?<ext>[^/\s.]+))?/;
+const placeholderRegexp = /\${\d+:?(?<placeholder>\S+)?}/g;
 
 function generateLanguageFile(language) {
   const data = [];
@@ -42,11 +43,11 @@ function generateReadme() {
       readMe.push("```");
       readMe.push("**Generated code**:");
       readMe.push(`\`\`\`${ext}`);
-      readMe.push(`${value.body}`);
+      readMe.push(`${value.body.replace(/(?<=\${\d+:\S+)}/g, "").replace(/\${\d+:?}?/g, "")}`);
       readMe.push("```");
     });
 
-    fs.outputFileSync(`docs/${language}/${module}/${name}.md`, readMe.join("\n").replace(/\${\d+}/g, ""));
+    fs.outputFileSync(`docs/${language}/${module}/${name}.md`, readMe.join("\n"));
   });
 }
 

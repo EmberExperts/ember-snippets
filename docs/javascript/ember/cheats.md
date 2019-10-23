@@ -9,7 +9,7 @@ set(...)
 ```
 **Generated code**:
 ```js
-set(${1:this}, '', );
+set(this, '', );
 ```
 ### `get(...)`
 **Prefix:** `get`
@@ -20,7 +20,7 @@ get(...)
 ```
 **Generated code**:
 ```js
-get(${1:this}, '');
+get(this, '');
 ```
 ### `this._super(...)`
 **Prefix:** `super`
@@ -67,7 +67,7 @@ observer(...)
 ```
 **Generated code**:
 ```js
-observer('${1:property}', function() {
+observer('property', function() {
 	
 }),
 ```
@@ -80,7 +80,7 @@ on(...)
 ```
 **Generated code**:
 ```js
-on('${1:property}', function() {
+on('property', function() {
 	
 }),
 ```
@@ -106,7 +106,7 @@ computed(...)
 ```
 **Generated code**:
 ```js
-computed('${1:property}', function() {
+computed('property', function() {
 	
 }),
 ```
@@ -132,7 +132,7 @@ alias(...)
 ```
 **Generated code**:
 ```js
-alias('${1:key}');
+alias('key');
 ```
 ### `and(...)`
 **Prefix:** `cand`
@@ -143,7 +143,7 @@ and(...)
 ```
 **Generated code**:
 ```js
-and('${1:key1}', '${2:key2}');
+and('key1', 'key2');
 ```
 ### `bool(...)`
 **Prefix:** `cbool`
@@ -154,7 +154,7 @@ bool(...)
 ```
 **Generated code**:
 ```js
-bool(${1:key});
+bool(key);
 ```
 ### `collect(...)`
 **Prefix:** `ccollect`
@@ -165,7 +165,7 @@ collect(...)
 ```
 **Generated code**:
 ```js
-collect(${1:keys});
+collect(keys);
 ```
 ### `empty(...)`
 **Prefix:** `cempty`
@@ -176,7 +176,7 @@ empty(...)
 ```
 **Generated code**:
 ```js
-empty('${1:key}');
+empty('key');
 ```
 ### `equal(...)`
 **Prefix:** `cequal`
@@ -187,7 +187,7 @@ equal(...)
 ```
 **Generated code**:
 ```js
-equal('${1:key}', ${2:value});
+equal('key', value);
 ```
 ### `filter(...)`
 **Prefix:** `cfilter`
@@ -198,8 +198,8 @@ filter(...)
 ```
 **Generated code**:
 ```js
-filter(${1:key}, function(${2:item}${3:, index}) {
-  return ${2:item};
+filter(key, function(item, index}) {
+  return item;
 }));
 ```
 ### `filterBy(...)`
@@ -211,7 +211,7 @@ filterBy(...)
 ```
 **Generated code**:
 ```js
-filterBy('${1:key}', ${2:propertyKey}, ${3:value});
+filterBy('key', propertyKey, value);
 ```
 ### `gt(...)`
 **Prefix:** `cgt`
@@ -222,7 +222,7 @@ gt(...)
 ```
 **Generated code**:
 ```js
-gt('${1:key}', ${2:value});
+gt('key', value);
 ```
 ### `gte(...)`
 **Prefix:** `cgte`
@@ -233,7 +233,7 @@ gte(...)
 ```
 **Generated code**:
 ```js
-gte('${1:key}', ${2:value});
+gte('key', value);
 ```
 ### `intersect(...)`
 **Prefix:** `intersect`
@@ -244,7 +244,7 @@ intersect(...)
 ```
 **Generated code**:
 ```js
-intersect('${1:key1}', '${2:key2}');
+intersect('key1', 'key2');
 ```
 ### `lt(...)`
 **Prefix:** `clt`
@@ -255,7 +255,7 @@ lt(...)
 ```
 **Generated code**:
 ```js
-lt('${1:key}', ${2:value});
+lt('key', value);
 ```
 ### `lte(...)`
 **Prefix:** `clte`
@@ -266,7 +266,7 @@ lte(...)
 ```
 **Generated code**:
 ```js
-lte('${1:key}', ${2:value});
+lte('key', value);
 ```
 ### `map(...)`
 **Prefix:** `cmap`
@@ -277,8 +277,8 @@ map(...)
 ```
 **Generated code**:
 ```js
-map(${1:key}, function(${2:item}${3:, index}) {
-  return ${2:item};
+map(key, function(item, index}) {
+  return item;
 }));
 ```
 ### `mapBy(...)`
@@ -290,7 +290,7 @@ mapBy(...)
 ```
 **Generated code**:
 ```js
-mapBy('${1:key}', '${2:propertyKey}');
+mapBy('key', 'propertyKey');
 ```
 ### `match(...)`
 **Prefix:** `cmatch`
@@ -301,7 +301,7 @@ match(...)
 ```
 **Generated code**:
 ```js
-match('${1:key}', ${2:regEx});
+match('key', regEx);
 ```
 ### `max(...)`
 **Prefix:** `cmax`
@@ -312,7 +312,7 @@ max(...)
 ```
 **Generated code**:
 ```js
-max('${1:key}');
+max('key');
 ```
 ### `min(...)`
 **Prefix:** `cmin`
@@ -323,7 +323,7 @@ min(...)
 ```
 **Generated code**:
 ```js
-min('${1:key}');
+min('key');
 ```
 ### `none(...)`
 **Prefix:** `cnone`
@@ -334,7 +334,7 @@ none(...)
 ```
 **Generated code**:
 ```js
-none('${1:key}');
+none('key');
 ```
 ### `not(...)`
 **Prefix:** `cnot`
@@ -345,7 +345,7 @@ not(...)
 ```
 **Generated code**:
 ```js
-not('${1:key}');
+not('key');
 ```
 ### `notEmpty(...)`
 **Prefix:** `cnotEmpty`
@@ -356,7 +356,7 @@ notEmpty(...)
 ```
 **Generated code**:
 ```js
-notEmpty('${1:key}');
+notEmpty('key');
 ```
 ### `oneWay(...)`
 **Prefix:** `coneWay`
@@ -367,7 +367,7 @@ oneWay(...)
 ```
 **Generated code**:
 ```js
-oneWay('${1:key}');
+oneWay('key');
 ```
 ### `or(...)`
 **Prefix:** `cor`
@@ -378,7 +378,7 @@ or(...)
 ```
 **Generated code**:
 ```js
-or('${1:key1}', '${2:key2}');
+or('key1', 'key2');
 ```
 ### `readOnly(...)`
 **Prefix:** `creadOnly`
@@ -389,7 +389,7 @@ readOnly(...)
 ```
 **Generated code**:
 ```js
-readOnly('${1:key}');
+readOnly('key');
 ```
 ### `reads(...)`
 **Prefix:** `creads`
@@ -400,7 +400,7 @@ reads(...)
 ```
 **Generated code**:
 ```js
-reads('${1:key}');
+reads('key');
 ```
 ### `setDiff(...)`
 **Prefix:** `csetDiff`
@@ -411,7 +411,7 @@ setDiff(...)
 ```
 **Generated code**:
 ```js
-setDiff('${1:key1}', '${2:key2}');
+setDiff('key1', 'key2');
 ```
 ### `sort(...)`
 **Prefix:** `csort`
@@ -422,7 +422,7 @@ sort(...)
 ```
 **Generated code**:
 ```js
-sort('${1:itemsKey}', '${2:sortDefinition}');
+sort('itemsKey', 'sortDefinition');
 ```
 ### `sum(...)`
 **Prefix:** `csum`
@@ -433,7 +433,7 @@ sum(...)
 ```
 **Generated code**:
 ```js
-sum('${1:key}');
+sum('key');
 ```
 ### `union(...)`
 **Prefix:** `cunion`
@@ -444,7 +444,7 @@ union(...)
 ```
 **Generated code**:
 ```js
-union('${1:key1}', '${2:key2}');
+union('key1', 'key2');
 ```
 ### `uniq(...)`
 **Prefix:** `cuniq`
@@ -455,7 +455,7 @@ uniq(...)
 ```
 **Generated code**:
 ```js
-uniq('${1:key}', '${2:propertyKey}');
+uniq('key', 'propertyKey');
 ```
 ### `uniqBy(...)`
 **Prefix:** `cuniqBy`
@@ -466,7 +466,7 @@ uniqBy(...)
 ```
 **Generated code**:
 ```js
-uniqBy('${1:key}');
+uniqBy('key');
 ```
 ### `bind(...)`
 **Prefix:** `bind`
@@ -477,7 +477,7 @@ bind(...)
 ```
 **Generated code**:
 ```js
-bind(${1:this}, ${2:this.methodName});
+bind(this, this.methodName);
 ```
 ### `cancel(...)`
 **Prefix:** `cancel`
@@ -488,7 +488,7 @@ cancel(...)
 ```
 **Generated code**:
 ```js
-cancel('${1:key}');
+cancel('key');
 ```
 ### `debounce(...)`
 **Prefix:** `debounce`
@@ -499,7 +499,7 @@ debounce(...)
 ```
 **Generated code**:
 ```js
-debounce(${1:this}, '${2:methodName}', ${3:500});
+debounce(this, 'methodName', 500);
 ```
 ### `later(...)`
 **Prefix:** `later`
@@ -510,7 +510,7 @@ later(...)
 ```
 **Generated code**:
 ```js
-later(${1:this}, () => { \}, ${3:500});
+later(this, () => { \}, 500);
 ```
 ### `next(...)`
 **Prefix:** `next`
@@ -521,7 +521,7 @@ next(...)
 ```
 **Generated code**:
 ```js
-next(${1:this}, () => { \});
+next(this, () => { \});
 ```
 ### `once(...)`
 **Prefix:** `once`
@@ -532,7 +532,7 @@ once(...)
 ```
 **Generated code**:
 ```js
-once(${1:this}, () => { \});
+once(this, () => { \});
 ```
 ### `run(...)`
 **Prefix:** `run`
@@ -554,7 +554,7 @@ schedule(...)
 ```
 **Generated code**:
 ```js
-schedule('${1:queue}', ${2:this}, () => { \}, );
+schedule('queue', this, () => { \}, );
 ```
 ### `scheduleOnce(...)`
 **Prefix:** `scheduleOnce`
@@ -565,7 +565,7 @@ scheduleOnce(...)
 ```
 **Generated code**:
 ```js
-scheduleOnce('${1:queue}', ${2:this}, () => { \}, );
+scheduleOnce('queue', this, () => { \}, );
 ```
 ### `throttle(...)`
 **Prefix:** `throttle`
@@ -576,7 +576,7 @@ throttle(...)
 ```
 **Generated code**:
 ```js
-throttle(${1:this}, '${2:methodName}', ${3:500});
+throttle(this, 'methodName', 500);
 ```
 ### `Route: model(...) { ... }`
 **Prefix:** `model`

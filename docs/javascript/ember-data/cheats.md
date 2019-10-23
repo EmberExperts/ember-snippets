@@ -9,7 +9,7 @@ findAll(...)
 ```
 **Generated code**:
 ```js
-this.store.findAll('${1:model}');
+this.store.findAll('model');
 ```
 ### `findRecord(...)`
 **Prefix:** `findRecord`
@@ -20,7 +20,7 @@ findRecord(...)
 ```
 **Generated code**:
 ```js
-this.store.findRecord('${1:model}', params.${1:model}_id);
+this.store.findRecord('model', params.model_id);
 ```
 ### `peekAll(...)`
 **Prefix:** `peekAll`
@@ -31,7 +31,7 @@ peekAll(...)
 ```
 **Generated code**:
 ```js
-this.store.peekAll('${1:model}');
+this.store.peekAll('model');
 ```
 ### `peekRecord(...)`
 **Prefix:** `peekRecord`
@@ -42,7 +42,7 @@ peekRecord(...)
 ```
 **Generated code**:
 ```js
-this.store.peekRecord('${1:model}', params.${1:model}_id);
+this.store.peekRecord('model', params.model_id);
 ```
 ### `query(...)`
 **Prefix:** `queryAll`
@@ -53,7 +53,7 @@ query(...)
 ```
 **Generated code**:
 ```js
-this.store.query('${1:model}', { ${2:queryKey}: ${3:queryValue}});
+this.store.query('model', { queryKey: queryValue);
 ```
 ### `queryRecord(...)`
 **Prefix:** `queryRecord`
@@ -64,5 +64,5 @@ queryRecord(...)
 ```
 **Generated code**:
 ```js
-this.store.queryRecord('${1:model}', { ${2:queryKey}: ${3:queryValue}});
+this.store.queryRecord('model', { queryKey: queryValue);
 ```
