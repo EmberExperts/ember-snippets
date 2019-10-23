@@ -15,7 +15,7 @@ Supported editors:
 
 Following snippets are just a selected subset. 
 
-**Full documentation can be found in (`/docs`)[https://github.com/Exelord/ember-snippets/tree/master/docs] folder**
+**Full documentation can be found in [`/docs`](https://github.com/Exelord/ember-snippets/tree/master/docs) folder**
 
 ### Ember Snippets
 
