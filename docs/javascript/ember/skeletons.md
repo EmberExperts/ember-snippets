@@ -12,7 +12,7 @@ Route Skeleton
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-	
+  
 });
 ```
 ### `ES6 Route Skeleton`
@@ -29,7 +29,7 @@ import Route from '@ember/routing/route';
 
 @classic
 class Route extends Route {
-	
+  
 }
 
 export default Route;
@@ -46,7 +46,7 @@ Controller Skeleton
 import Controller from '@ember/controller';
 
 export default Controller.extend({
-	
+  
 });
 ```
 ### `ES6 Controller Skeleton`
@@ -63,7 +63,7 @@ import Controller from '@ember/controller';
 
 @classic
 class Controller extends Controller {
-	
+  
 }
 
 export default Controller;
@@ -80,7 +80,7 @@ Service Skeleton
 import Service from '@ember/service';
 
 export default Service.extend({
-	
+  
 });
 ```
 ### `ES6 Service Skeleton`
@@ -97,7 +97,7 @@ import Service from '@ember/service';
 
 @classic
 class Service extends Service {
-	
+  
 }
 
 export default Service;
@@ -114,7 +114,7 @@ Component Skeleton
 import Component from '@ember/component';
 
 export default Component.extend({
-	tagName: ''
+  tagName: ''
 });
 ```
 ### `Glimmer Component Skeleton`
@@ -129,7 +129,7 @@ Glimmer Component Skeleton
 import Component from '@glimmer/component';
 
 class Component extends Component {
-	
+  
 }
 ```
 ### `ES6 Classic Component Skeleton`
@@ -146,7 +146,7 @@ import Component from '@ember/component';
 
 @classic
 class Component extends Component {
-	tagName = '';
+  tagName = '';
 }
 
 export default Component;
@@ -163,7 +163,7 @@ Mixin Skeleton
 import Mixin from '@ember/object/mixin';
 
 export default Mixin.create({
-	
+  
 });
 ```
 ### `ES6 Mixin Skeleton`
@@ -180,7 +180,7 @@ import Mixin from '@ember/object/mixin';
 
 @classic
 class Mixin extends Mixin {
-	
+  
 }
 
 export default Mixin;
@@ -197,7 +197,7 @@ Object Skeleton
 import EmberObject from '@ember/object';
 
 export default EmberObject.extend({
-	
+  
 });
 ```
 ### `ES6 Object Skeleton`
@@ -214,7 +214,7 @@ import EmberObject from '@ember/object';
 
 @classic
 class  extends EmberObject {
-	
+  
 }
 
 export default ;
@@ -231,7 +231,7 @@ Bound Helper Skeleton
 import Ember from 'ember';
 
 export default Ember.Handlebars.makeBoundHelper(function() {
-	
+  
 });
 ```
 ### `Helper Skeleton`
@@ -246,9 +246,9 @@ Helper Skeleton
 import Helper from '@ember/component/helper';
 
 export default Helper.extend({
-	compute() {
-		
-	}
+  compute() {
+    
+  }
 });
 ```
 ### `ES6 Helper Skeleton`
@@ -265,9 +265,9 @@ import Helper from '@ember/component/helper';
 
 @classic
 class Helper extends Helper {
-	compute() {
-		
-	}
+  compute() {
+    
+  }
 }
 
 export default Helper;
@@ -282,7 +282,7 @@ Initializer Skeleton
 **Generated code**:
 ```js
 export function initialize(application) {
-	
+  
 }
 
 export default { initialize };

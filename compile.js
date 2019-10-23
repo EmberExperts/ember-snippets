@@ -34,6 +34,11 @@ function generateReadme() {
     readMe.push(`## ${module}`);
 
     Object.entries(fileContent).forEach(([key, value]) => {
+      const body = value.body
+        .replace(/(?<=\${\d+:\S+)}/g, "")
+        .replace(/\${\d+:?}?/g, "")
+        .replace(/\t/g, "  ");
+
       readMe.push(`### \`${key}\``);
       readMe.push(`**Prefix:** \`${value.prefix}\`\n`);
       readMe.push("**Description**:");
@@ -42,7 +47,7 @@ function generateReadme() {
       readMe.push("```");
       readMe.push("**Generated code**:");
       readMe.push(`\`\`\`${ext}`);
-      readMe.push(`${value.body.replace(/(?<=\${\d+:\S+)}/g, "").replace(/\${\d+:?}?/g, "")}`);
+      readMe.push(`${body}`);
       readMe.push("```");
     });
 

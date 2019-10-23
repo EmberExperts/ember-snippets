@@ -54,7 +54,7 @@ The {{component}} helper lets you add instances of Component to a template.
 **Generated code**:
 ```js
 {{#component }}
-	
+  
 {{/component}}
 ```
 ### `concat`
@@ -111,7 +111,7 @@ The let helper receives one or more positional arguments and yields them out as 
 **Generated code**:
 ```js
 {{#let  as ||}}
-	
+  
 {{/let}}
 ```
 ### `mount`

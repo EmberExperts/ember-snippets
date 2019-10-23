@@ -10,7 +10,7 @@ The {{#each}} helper loops over elements in a collection.
 **Generated code**:
 ```js
 {{#each  as ||}}
-	
+  
 {{/each}}
 ```
 ### `#each-in`
@@ -23,7 +23,7 @@ The {{each-in}} helper loops over properties on an object.
 **Generated code**:
 ```js
 {{#each-in  as | |}}
-	
+  
 {{/each-in}}
 ```
 ### `#each/else`
@@ -36,9 +36,9 @@ The {{#each}} helper loops over elements in a collection.
 **Generated code**:
 ```js
 {{#each  as ||}}
-	
+  
 {{else}}
-	
+  
 {{/each}}
 ```
 ### `#if hasBlock`
@@ -51,7 +51,7 @@ Indicates if the component was invoked with a block.
 **Generated code**:
 ```js
 {{#if (hasBlock)}}
-	
+  
 {{/if}}
 ```
 ### `#if hasBlockParams`
@@ -64,7 +64,7 @@ Indicates if the component was invoked with block params.
 **Generated code**:
 ```js
 {{#if (hasBlockParams)}}
-	
+  
 {{/if}}
 ```
 ### `if`
@@ -88,7 +88,7 @@ The if helper allows you to conditionally render one of two branches, depending 
 **Generated code**:
 ```js
 {{#if }}
-	
+  
 {{/if}}
 ```
 ### `#if/else`
@@ -101,9 +101,9 @@ The if helper allows you to conditionally render one of two branches, depending 
 **Generated code**:
 ```js
 {{#if }}
-	
+  
 {{else}}
-	
+  
 {{/if}}
 ```
 ### `unless`
@@ -138,7 +138,7 @@ The unless helper is the inverse of the if helper. It displays if a value is fal
 **Generated code**:
 ```js
 {{#unless }}
-	
+  
 {{/unless}}
 ```
 ### `#unless/else`
@@ -151,9 +151,9 @@ The unless helper is the inverse of the if helper. It displays if a value is fal
 **Generated code**:
 ```js
 {{#unless }}
-	
+  
 {{else}}
-	
+  
 {{/unless}}
 ```
 ### `with`
@@ -166,7 +166,7 @@ with
 **Generated code**:
 ```js
 {{#with  as ||}}
-	
+  
 {{/with}}
 ```
 ### `log`

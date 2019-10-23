@@ -32,6 +32,6 @@ The {{link-to}} component renders a link to the supplied routeName.
 **Generated code**:
 ```js
 <LinkTo @route="">
-	
+  
 </LinkTo>
 ```

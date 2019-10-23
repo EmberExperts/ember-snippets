@@ -252,6 +252,6 @@ andThen(...)
 **Generated code**:
 ```js
 andThen(() => {
-	
+  
 });
 ```

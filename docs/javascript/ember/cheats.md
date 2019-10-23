@@ -43,8 +43,8 @@ init() { ... }
 **Generated code**:
 ```js
 init() {
-	this._super(...arguments);
-	
+  this._super(...arguments);
+  
 },
 ```
 ### `service(...)`
@@ -68,7 +68,7 @@ observer(...)
 **Generated code**:
 ```js
 observer('property', function() {
-	
+  
 }),
 ```
 ### `on(...)`
@@ -81,7 +81,7 @@ on(...)
 **Generated code**:
 ```js
 on('property', function() {
-	
+  
 }),
 ```
 ### `actions: { ... }`
@@ -94,7 +94,7 @@ actions: { ... }
 **Generated code**:
 ```js
 actions: {
-	
+  
 }
 ```
 ### `computed(...)`
@@ -107,7 +107,7 @@ computed(...)
 **Generated code**:
 ```js
 computed('property', function() {
-	
+  
 }),
 ```
 ### `action(...)`
@@ -120,7 +120,7 @@ action(...)
 **Generated code**:
 ```js
 action(function() {
-	
+  
 }),
 ```
 ### `alias(...)`
@@ -588,7 +588,7 @@ Route: model(...) { ... }
 **Generated code**:
 ```js
 model(params = {}) {
-	return this.store.query('', params);
+  return this.store.query('', params);
 },
 ```
 ### `Route: setupController(...) { ... }`
@@ -601,8 +601,8 @@ Route: setupController(...) { ... }
 **Generated code**:
 ```js
 setupController(controller, model) {
-	this._super(controller, model);
-	
+  this._super(controller, model);
+  
 },
 ```
 ### `Route: beforeModel(...) { ... }`
@@ -615,8 +615,8 @@ Route: beforeModel(...) { ... }
 **Generated code**:
 ```js
 beforeModel(transition) {
-	this._super(controller, model);
-	
+  this._super(controller, model);
+  
 },
 ```
 ### `Route: afterModel(...) { ... }`
@@ -629,8 +629,8 @@ Route: afterModel(...) { ... }
 **Generated code**:
 ```js
 afterModel(model, transition) {
-	this._super(controller, model);
-	
+  this._super(controller, model);
+  
 },
 ```
 ### `Component: didReceiveAttrs() { ... }`
@@ -643,8 +643,8 @@ Component: didReceiveAttrs() { ... }
 **Generated code**:
 ```js
 didReceiveAttrs() {
-	this._super(...arguments);
-	
+  this._super(...arguments);
+  
 },
 ```
 ### `Component: didRender() { ... }`
@@ -657,8 +657,8 @@ Component: didRender() { ... }
 **Generated code**:
 ```js
 didRender() {
-	this._super(...arguments);
-	
+  this._super(...arguments);
+  
 },
 ```
 ### `Component: didUpdateAttrs() { ... }`
@@ -671,8 +671,8 @@ Component: didUpdateAttrs() { ... }
 **Generated code**:
 ```js
 didUpdateAttrs() {
-	this._super(...arguments);
-	
+  this._super(...arguments);
+  
 },
 ```
 ### `Component: willUpdate() { ... }`
@@ -685,8 +685,8 @@ Component: willUpdate() { ... }
 **Generated code**:
 ```js
 willUpdate() {
-	this._super(...arguments);
-	
+  this._super(...arguments);
+  
 },
 ```
 ### `Component: didInsertElement() { ... }`
@@ -699,8 +699,8 @@ Component: didInsertElement() { ... }
 **Generated code**:
 ```js
 didInsertElement() {
-	this._super(...arguments);
-	
+  this._super(...arguments);
+  
 },
 ```
 ### `Component: willDestroyElement() { ... }`
@@ -713,8 +713,8 @@ Component: willDestroyElement() { ... }
 **Generated code**:
 ```js
 willDestroyElement() {
-	this._super(...arguments);
-	
+  this._super(...arguments);
+  
 },
 ```
 ### `Component: willClearElement() { ... }`
@@ -727,8 +727,8 @@ Component: willClearElement() { ... }
 **Generated code**:
 ```js
 willClearElement() {
-	this._super(...arguments);
-	
+  this._super(...arguments);
+  
 },
 ```
 ### `Component: didDestroyElement() { ... }`
@@ -741,7 +741,7 @@ Component: didDestroyElement() { ... }
 **Generated code**:
 ```js
 didDestroyElement() {
-	this._super(...arguments);
-	
+  this._super(...arguments);
+  
 },
 ```
