@@ -199,7 +199,7 @@ Is this package missing your favorite addon or snippet? It's super easy to contr
 3. Fill in the files with following structure:
  ```js
   module.exports = {
-    "[my-addon] superFunction": {
+    "superFunction": {
       "prefix": "imsuperFunction",
       "body": "import { superFunction } from 'my-addon';",
       "description": "superFunction allows you to do super things"
