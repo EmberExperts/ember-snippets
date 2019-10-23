@@ -1,4 +1,4 @@
-# javascript - ember-data
+# javascript - ember-data - imports
 ## Table of Contents
 - [[ember-data] RecordData](#emberdata-recorddata)
 - [[ember-data] Adapter](#emberdata-adapter)

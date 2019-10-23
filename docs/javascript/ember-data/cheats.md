@@ -1,4 +1,4 @@
-# javascript - ember-data
+# javascript - ember-data - cheats
 ## Table of Contents
 - [findAll(...)](#findall)
 - [findRecord(...)](#findrecord)

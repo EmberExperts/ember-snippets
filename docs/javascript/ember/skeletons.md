@@ -1,4 +1,4 @@
-# javascript - ember
+# javascript - ember - skeletons
 ## Table of Contents
 - [Route Skeleton](#route-skeleton)
 - [ES6 Route Skeleton](#es6-route-skeleton)

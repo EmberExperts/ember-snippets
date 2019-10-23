@@ -1,4 +1,4 @@
-# javascript - ember-concurrency
+# javascript - ember-concurrency - imports
 ## Table of Contents
 - [didCancel](#didcancel)
 - [task](#task)

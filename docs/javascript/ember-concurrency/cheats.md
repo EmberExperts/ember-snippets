@@ -1,4 +1,4 @@
-# javascript - ember-concurrency
+# javascript - ember-concurrency - cheats
 ## Table of Contents
 - [didCancel(error)](#didcancelerror)
 - [task(...)](#task)

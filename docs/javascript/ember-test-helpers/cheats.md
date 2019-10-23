@@ -1,4 +1,4 @@
-# javascript - ember-test-helpers
+# javascript - ember-test-helpers - cheats
 ## Table of Contents
 - [await click(...)](#await-click)
 - [await doubleClick(...)](#await-doubleclick)

@@ -1,4 +1,4 @@
-# handlebars - ember
+# handlebars - ember - components
 ## Table of Contents
 - [input](#input)
 - [textarea](#textarea)

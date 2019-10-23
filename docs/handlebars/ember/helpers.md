@@ -1,4 +1,4 @@
-# handlebars - ember
+# handlebars - ember - helpers
 ## Table of Contents
 - [action](#action)
 - [array](#array)

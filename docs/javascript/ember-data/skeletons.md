@@ -1,4 +1,4 @@
-# javascript - ember-data
+# javascript - ember-data - skeletons
 ## Table of Contents
 - [Model Skeleton](#model-skeleton)
 - [ES6 Model Skeleton](#es6-model-skeleton)

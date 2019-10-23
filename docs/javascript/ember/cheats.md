@@ -1,4 +1,4 @@
-# javascript - ember
+# javascript - ember - cheats
 ## Table of Contents
 - [set(...)](#set)
 - [get(...)](#get)

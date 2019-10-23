@@ -1,4 +1,4 @@
-# handlebars - ember
+# handlebars - ember - hbs-helpers
 ## Table of Contents
 - [#each](#each)
 - [#each-in](#eachin)

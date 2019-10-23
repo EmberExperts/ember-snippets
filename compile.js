@@ -57,7 +57,7 @@ function generateReadme() {
     readMe.unshift("## Snippets");
     readMe.unshift(toc.map((el) => `- [${el.key}](${el.link})`).join("\n"));
     readMe.unshift("## Table of Contents");
-    readMe.unshift(`# ${language} - ${module}`);
+    readMe.unshift(`# ${language} - ${module} - ${name}`);
     fs.outputFileSync(mdFilePath, readMe.join("\n"));
   });
 }

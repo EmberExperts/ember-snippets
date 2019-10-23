@@ -1,4 +1,4 @@
-# javascript - ember
+# javascript - ember - imports
 ## Table of Contents
 - [Ember.Application](#emberapplication)
 - [Ember.getOwner](#embergetowner)
