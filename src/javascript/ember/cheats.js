@@ -26,22 +26,22 @@ module.exports = {
   },
   "observer(...)": {
     "prefix": "observer",
-    "body": "observer('${1:property}', function() {\n\t${2:// body}\n}),",
+    "body": "observer('${1:property}', function() {\n\t${2}\n}),",
     "description": "observer(...)"
   },
   "on(...)": {
     "prefix": "on",
-    "body": "on('${1:property}', function() {\n\t${2:// body}\n}),",
+    "body": "on('${1:property}', function() {\n\t${2}\n}),",
     "description": "on(...)"
   },
   "actions: { ... }": {
     "prefix": "actions",
-    "body": "actions: {\n\t${1:// body}\n}",
+    "body": "actions: {\n\t${1}\n}",
     "description": "actions: { ... }"
   },
   "computed(...)": {
     "prefix": "computed",
-    "body": "computed('${1:property}', function() {\n\t${2:// body}\n}),",
+    "body": "computed('${1:property}', function() {\n\t${2}\n}),",
     "description": "computed(...)"
   },
   "action(...)": {

@@ -1,7 +1,7 @@
 module.exports = {
   "Route Skeleton": {
     "prefix": "route",
-    "body": "import Route from '@ember/routing/route';\n\nexport default Route.extend({\n\t${1:// body}\n});",
+    "body": "import Route from '@ember/routing/route';\n\nexport default Route.extend({\n\t${1}\n});",
     "description": "Route Skeleton"
   },
   "ES6 Route Skeleton": {
@@ -11,7 +11,7 @@ module.exports = {
   },
   "Controller Skeleton": {
     "prefix": "controller",
-    "body": "import Controller from '@ember/controller';\n\nexport default Controller.extend({\n\t${1:// body}\n});",
+    "body": "import Controller from '@ember/controller';\n\nexport default Controller.extend({\n\t${1}\n});",
     "description": "Controller Skeleton"
   },
   "ES6 Controller Skeleton": {
@@ -21,7 +21,7 @@ module.exports = {
   },
   "Service Skeleton": {
     "prefix": "service",
-    "body": "import Service from '@ember/service';\n\nexport default Service.extend({\n\t${1:// body}\n});",
+    "body": "import Service from '@ember/service';\n\nexport default Service.extend({\n\t${1}\n});",
     "description": "Service Skeleton"
   },
   "ES6 Service Skeleton": {
@@ -46,7 +46,7 @@ module.exports = {
   },
   "Mixin Skeleton": {
     "prefix": "mixin",
-    "body": "import Mixin from '@ember/object/mixin';\n\nexport default Mixin.create({\n\t${1:// body}\n});",
+    "body": "import Mixin from '@ember/object/mixin';\n\nexport default Mixin.create({\n\t${1}\n});",
     "description": "Mixin Skeleton"
   },
   "ES6 Mixin Skeleton": {
@@ -56,7 +56,7 @@ module.exports = {
   },
   "Object Skeleton": {
     "prefix": "object",
-    "body": "import EmberObject from '@ember/object';\n\nexport default EmberObject.extend({\n\t${1:// body}\n});",
+    "body": "import EmberObject from '@ember/object';\n\nexport default EmberObject.extend({\n\t${1}\n});",
     "description": "Object Skeleton"
   },
   "ES6 Object Skeleton": {
@@ -66,12 +66,12 @@ module.exports = {
   },
   "Bound Helper Skeleton": {
     "prefix": "bound-helper",
-    "body": "import Ember from 'ember';\n\nexport default Ember.Handlebars.makeBoundHelper(function() {\n\t${1:// body}\n});",
+    "body": "import Ember from 'ember';\n\nexport default Ember.Handlebars.makeBoundHelper(function() {\n\t${1}\n});",
     "description": "Bound Helper Skeleton"
   },
   "Helper Skeleton": {
     "prefix": "helper",
-    "body": "import Helper from '@ember/component/helper';\n\nexport default Helper.extend({\n\tcompute() {\n\t\t${1:// body}\n\t}\n});",
+    "body": "import Helper from '@ember/component/helper';\n\nexport default Helper.extend({\n\tcompute() {\n\t\t${1}\n\t}\n});",
     "description": "Helper Skeleton"
   },
   "ES6 Helper Skeleton": {

@@ -1,7 +1,8 @@
 .vscode/**
 .vscode-test/**
-.gitignore
-compile.js
-vsc-extension-quickstart.md
 src/**
 node_modules/**
+.gitignore
+.eslintrc.js
+compile.js
+vsc-extension-quickstart.md

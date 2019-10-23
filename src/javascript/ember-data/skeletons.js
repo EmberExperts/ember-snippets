@@ -1,7 +1,7 @@
 module.exports = {
   "Model Skeleton": {
     "prefix": "model",
-    "body": "import Model from '@ember-data/model';\n\nexport default Model.extend({\n\t${1:// body}\n});",
+    "body": "import Model from '@ember-data/model';\n\nexport default Model.extend({\n\t${1}\n});",
     "description": "Model Skeleton"
   },
   "ES6 Model Skeleton": {
@@ -11,7 +11,7 @@ module.exports = {
   },
   "Adapter Skeleton": {
     "prefix": "adapter",
-    "body": "import Adapter from '@ember-data/adapter';\n\nexport default Adapter.extend({\n\t${1:// body}\n});",
+    "body": "import Adapter from '@ember-data/adapter';\n\nexport default Adapter.extend({\n\t${1}\n});",
     "description": "Adapter Skeleton"
   },
   "ES6 Adapter Skeleton": {
@@ -21,7 +21,7 @@ module.exports = {
   },
   "REST Adapter Skeleton": {
     "prefix": "restAdapter",
-    "body": "import RESTAdapter from '@ember-data/adapter/rest';\n\nexport default RESTAdapter.extend({\n\t${1:// body}\n});",
+    "body": "import RESTAdapter from '@ember-data/adapter/rest';\n\nexport default RESTAdapter.extend({\n\t${1}\n});",
     "description": "REST Adapter Skeleton"
   },
   "ES6 REST Adapter Skeleton": {
@@ -31,7 +31,7 @@ module.exports = {
   },
   "JSON API Adapter Skeleton": {
     "prefix": "jsonapiAdapter",
-    "body": "import JSONAPIAdapter from '@ember-data/adapter/json-api';\n\nexport default JSONAPIAdapter.extend({\n\t${1:// body}\n});",
+    "body": "import JSONAPIAdapter from '@ember-data/adapter/json-api';\n\nexport default JSONAPIAdapter.extend({\n\t${1}\n});",
     "description": "JSON API Adapter Skeleton"
   },
   "ES6 JSON API Adapter Skeleton": {
@@ -41,7 +41,7 @@ module.exports = {
   },
   "Serializer Skeleton": {
     "prefix": "serializer",
-    "body": "import Serializer from '@ember-data/serializer';\n\nexport default Serializer.extend({\n\t${1:// body}\n});",
+    "body": "import Serializer from '@ember-data/serializer';\n\nexport default Serializer.extend({\n\t${1}\n});",
     "description": "Serializer Skeleton"
   },
   "ES6 Serializer Skeleton": {
@@ -51,7 +51,7 @@ module.exports = {
   },
   "REST Serializer Skeleton": {
     "prefix": "restSerializer",
-    "body": "import RESTSerializer from '@ember-data/serializer/rest';\n\nexport default RESTSerializer.extend({\n\t${1:// body}\n});",
+    "body": "import RESTSerializer from '@ember-data/serializer/rest';\n\nexport default RESTSerializer.extend({\n\t${1}\n});",
     "description": "REST Serializer Skeleton"
   },
   "ES6 REST Serializer Skeleton": {
@@ -61,7 +61,7 @@ module.exports = {
   },
   "JSON API Serializer Skeleton": {
     "prefix": "jsonapiSerializer",
-    "body": "import JSONAPISerializer from '@ember-data/serializer/json-api';\n\nexport default JSONAPISerializer.extend({\n\t${1:// body}\n});",
+    "body": "import JSONAPISerializer from '@ember-data/serializer/json-api';\n\nexport default JSONAPISerializer.extend({\n\t${1}\n});",
     "description": "JSON API Serializer Skeleton"
   },
   "ES6 JSON API Serializer Skeleton": {
@@ -71,7 +71,7 @@ module.exports = {
   },
   "Transform Serializer Skeleton": {
     "prefix": "transform",
-    "body": "import Transform from '@ember-data/serializer/transform';\n\nexport default Transform.extend({\n\t${1:// body}\n});",
+    "body": "import Transform from '@ember-data/serializer/transform';\n\nexport default Transform.extend({\n\t${1}\n});",
     "description": "Transform Serializer Skeleton"
   },
   "ES6 Transform Serializer Skeleton": {
