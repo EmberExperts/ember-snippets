@@ -44,6 +44,7 @@
       "release": true
     },
     "hooks": {
+      "before:release": "npm run build",
       "after:release": "vsce publish"
     }
   },

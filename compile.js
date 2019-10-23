@@ -4,7 +4,7 @@ const glob = require("glob");
 const path = require("path");
 const fs = require("fs-extra");
 
-const pathRegexp = /.\/src\/(?<language>.+)\/(?<module>.+)\//;
+const pathRegexp = /\.\/src\/(?<language>[^/\s]+)\/(?<module>[^/\s]+)\/(([^\s/]+\/)+)?(?<name>[^/\s.]+)(\.?(?<ext>[^/\s.]+))?/;
 
 function generateLanguageFile(language) {
   const data = [];
@@ -24,6 +24,35 @@ function generateLanguageFile(language) {
   fs.outputJsonSync(`dist/${language}.json`, Object.assign({}, ...data), { spaces: 2 });
 }
 
+function generateReadme() {
+  glob.sync("./src/**/*.js").forEach(function(file) {
+    const readMe = [];
+    const fileContent = require(path.resolve(file));
+    const { language, module, name, ext } = file.match(pathRegexp).groups;
+    
+    readMe.push(`# ${language}`);
+    readMe.push(`## ${module}`);
+
+    Object.entries(fileContent).forEach(([key, value]) => {
+      readMe.push(`### \`${key}\``);
+      readMe.push(`**Prefix:** \`${value.prefix}\`\n`);
+      readMe.push("**Description**:");
+      readMe.push("```");
+      readMe.push(value.description);
+      readMe.push("```");
+      readMe.push("**Generated code**:");
+      readMe.push(`\`\`\`${ext}`);
+      readMe.push(`${value.body}`);
+      readMe.push("```");
+    });
+
+    fs.outputFileSync(`docs/${language}/${module}/${name}.md`, readMe.join("\n").replace(/\${\d+}/g, ""));
+  });
+}
+
 fs.emptyDirSync("dist");
 generateLanguageFile("javascript");
 generateLanguageFile("handlebars");
+
+fs.emptyDirSync("docs");
+generateReadme();

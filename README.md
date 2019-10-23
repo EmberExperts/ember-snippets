@@ -13,7 +13,9 @@ Supported editors:
 
 ## What's included?
 
-Following snippets are just a selected subset. Full list available in the code: `src/**/`
+Following snippets are just a selected subset. 
+
+**Full documentation can be found in (`/docs`)[https://github.com/Exelord/ember-snippets/tree/master/docs] folder**
 
 ### Ember Snippets
 
@@ -52,27 +54,11 @@ didInsertElement() {
 Forget about generators. Just use the skeletons for anything, eg:
 ```
 component ->
-import Component from '@ember/component';
+import Component from '@glimmer/component';
 
-export default Component.extend({
- // body
-});
-
-service ->
-import Service from '@ember/service';
-
-export default Service.extend({
- // body
-});
-
-helper ->
-import Helper from '@ember/component/helper';
-
-export default Helper.extend({
- compute() {
- // body
- }
-});
+class Component extends Component {
+  
+}
 
 ```
 
@@ -84,13 +70,6 @@ yield -> {{yield}}
 debugger -> {{debugger}}
 
 on -> {{on }}
-
-mut -> (mut )
-
-let ->
-{{#let as ||}}
- 
-{{/let}}
 
 if -> 
 {{#if }}
@@ -104,91 +83,10 @@ eachelse ->
  
 {{/each}}
 
-input -> <Input @value= />
-
 linkto ->
 <LinkTo @route=>
  
 </LinkTo> 
-```
-
-### Addons Snippets
-
-#### Ember Data
-
-##### Imports
-All imports according to the latest RFC: https://emberjs.github.io/rfcs/0395-ember-data-packages.html
-
-Examples:
-
-```
-immodel -> import Model from '@ember-data/model';
-
-imhasMany -> import { hasMany } from '@ember-data/model';
-
-imattr -> import { attr } from '@ember-data/model';
-
-imJSONAPIAdapter -> import JSONAPIAdapter from '@ember-data/adapter/json-api';
-```
-
-##### Cheats
-Examples:
-
-```
-findAll -> this.store.findAll('model');
-queryRecord -> this.store.queryRecord('model', { queryKey: queryValue});
-```
-
-##### Skeletons
-Examples:
-
-```
-model ->
-import Model from '@ember-data/model';
-
-export default Model.extend({
-  // body
-});
-
-jsonapiAdapter ->
-import JSONAPIAdapter from '@ember-data/adapter/json-api';
-
-export default JSONAPIAdapter.extend({
-  // body
-});
-```
-
-### Ember Test Helpers
-
-##### Cheats
-Examples:
-
-```
-click -> await click();
-pauseTest -> await this.pauseTest();
-fillIn -> await fillIn();
-```
-
-### Ember Concurrency
-
-##### Imports
-Examples:
-
-```
-imtask -> import { task } from 'ember-concurrency';
-imtimeout -> import { timeout } from 'ember-concurrency';
-```
-
-##### Cheats
-Examples:
-
-```
-timeout -> yield timeout(0);
-
-task ->
-task(function *() {
-  // yield
-})
 ```
 
 ## Contribution
