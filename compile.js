@@ -3,7 +3,6 @@
 const glob = require("glob");
 const path = require("path");
 const fs = require("fs-extra");
-const CSON = require("cson");
 
 const pathRegexp = /\.\/src\/(?<language>[^/\s]+)\/(?<module>\S+)\/(?<name>[^/\s.]+)(\.?(?<ext>[^/\s.]+))?/;
 
@@ -28,16 +27,6 @@ function generateLanguageFile(language) {
 
   // VSCODE
   fs.outputJsonSync(`dist/${language}.json`, Object.assign({}, ...data), { spaces: 2 });
-
-  // ATOM
-  const langMapping = {
-    javascript: ".source.js, .source.ts",
-    handlebars: ".text.html.handlebars"
-  };
-
-  const atomKey = langMapping[language];
-
-  fs.outputFileSync(`snippets/${language}.cson`, CSON.stringify({ [atomKey]: Object.assign({}, ...data) }));
 }
 
 function generateDocs() {

@@ -13,8 +13,7 @@
   },
   "homepage": "https://github.com/Exelord/ember-snippets#readme",
   "engines": {
-    "vscode": "^1.35.0",
-    "atom": ">=1.0.0 <2.0.0"
+    "vscode": "^1.35.0"
   },
   "keywords": [
     "ember",
@@ -67,7 +66,6 @@
   },
   "devDependencies": {
     "@ember-data/rfc395-data": "0.0.4",
-    "cson": "^5.1.0",
     "ember-rfc176-data": "^0.3.12",
     "fs-extra": "^8.1.0",
     "glob": "^7.1.5",
