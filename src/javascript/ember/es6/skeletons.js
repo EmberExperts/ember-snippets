@@ -13,7 +13,7 @@ module.exports = {
   },
   "Glimmer Component": {
     "prefix": "component",
-    "body": "import Component from '@glimmer/component';\n\nclass ${1}Component extends Component {\n\t${2}\n}"
+    "body": "import Component from '@glimmer/component';\n\nclass ${1}Component extends Component {\n\t${2}\n}\n\nexport default ${1}Component;"
   },
   "Classic Component": {
     "prefix": "component",
