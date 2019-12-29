@@ -9,19 +9,19 @@ module.exports = {
   },
   "@observer": {
     "prefix": "@observer",
-    "body": "@observer('${1:property}')\n${2}() {\n\t${3}\n}"
+    "body": "@observer('${1:property}')"
   },
   "@on": {
     "prefix": "@on",
-    "body": "@on('${1:property}')\n${2}() {\n\t${3}\n}"
+    "body": "@on('${1:property}')"
   },
   "@computed": {
     "prefix": "@computed",
-    "body": "@computed('${1:property}')\n${2}() {\n\t${3}\n})"
+    "body": "@computed('${1:property}')"
   },
   "@action": {
     "prefix": "@action",
-    "body": "@action\n${2}() {\n\t${3}\n}"
+    "body": "@action"
   },
   "@alias()": {
     "prefix": "@alias",
