@@ -70,9 +70,6 @@
 **Generated code**:
 ```js
 @observer('property')
-() {
-  
-}
 ```
 ### `@on`
 **Prefix:** `@on`
@@ -84,9 +81,6 @@
 **Generated code**:
 ```js
 @on('property')
-() {
-  
-}
 ```
 ### `@computed`
 **Prefix:** `@computed`
@@ -98,9 +92,6 @@
 **Generated code**:
 ```js
 @computed('property')
-() {
-  
-})
 ```
 ### `@action`
 **Prefix:** `@action`
@@ -112,9 +103,6 @@
 **Generated code**:
 ```js
 @action
-() {
-  
-}
 ```
 ### `@alias()`
 **Prefix:** `@alias`
