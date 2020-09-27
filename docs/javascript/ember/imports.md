@@ -19,15 +19,13 @@
 - [Ember.FEATURES.isEnabled](#emberfeaturesisenabled)
 - [Ember.Component](#embercomponent)
 - [Ember._componentManagerCapabilities](#ember_componentmanagercapabilities)
-- [Ember._setComponentManager](#ember_setcomponentmanager)
 - [Ember._getComponentTemplate](#ember_getcomponenttemplate)
+- [Ember._setComponentManager](#ember_setcomponentmanager)
 - [Ember._setComponentTemplate](#ember_setcomponenttemplate)
-- [Ember._templateOnlyComponent](#ember_templateonlycomponent)
-- [Ember._setModifierManager](#ember_setmodifiermanager)
-- [Ember._modifierManagerCapabilities](#ember_modifiermanagercapabilities)
 - [Ember.Checkbox](#embercheckbox)
 - [Ember.Helper](#emberhelper)
 - [Ember.Helper.helper](#emberhelperhelper)
+- [Ember._templateOnlyComponent](#ember_templateonlycomponent)
 - [Ember.TextArea](#embertextarea)
 - [Ember.TextField](#embertextfield)
 - [Ember.Controller](#embercontroller)
@@ -41,6 +39,14 @@
 - [Ember.warn](#emberwarn)
 - [Ember.ContainerDebugAdapter](#embercontainerdebugadapter)
 - [Ember.DataAdapter](#emberdataadapter)
+- [Ember._assertDestroyablesDestroyed](#ember_assertdestroyablesdestroyed)
+- [Ember._associateDestroyableChild](#ember_associatedestroyablechild)
+- [Ember.destroy](#emberdestroy)
+- [Ember._enableDestroyableTracking](#ember_enabledestroyabletracking)
+- [Ember._isDestroyed](#ember_isdestroyed)
+- [Ember._isDestroying](#ember_isdestroying)
+- [Ember._registerDestructor](#ember_registerdestructor)
+- [Ember._unregisterDestructor](#ember_unregisterdestructor)
 - [Ember.Engine](#emberengine)
 - [Ember.getEngineParent](#embergetengineparent)
 - [Ember.EngineInstance](#emberengineinstance)
@@ -52,6 +58,8 @@
 - [Ember.Instrumentation.unsubscribe](#emberinstrumentationunsubscribe)
 - [Ember.Map](#embermap)
 - [Ember.MapWithDefault](#embermapwithdefault)
+- [Ember._modifierManagerCapabilities](#ember_modifiermanagercapabilities)
+- [Ember._setModifierManager](#ember_setmodifiermanager)
 - [Ember.Object](#emberobject)
 - [Ember._action](#ember_action)
 - [Ember.aliasMethod](#emberaliasmethod)
@@ -175,6 +183,9 @@
 - [Ember.typeOf](#embertypeof)
 - [Ember.VERSION](#emberversion)
 - [Ember._tracked](#ember_tracked)
+- [Ember._createCache](#ember_createcache)
+- [Ember._cacheGetValue](#ember_cachegetvalue)
+- [Ember._cacheIsConst](#ember_cacheisconst)
 - [Ember.$](#ember)
 - [Ember.RSVP](#emberrsvp)
 - [Ember.RSVP.Promise](#emberrsvppromise)
@@ -401,17 +412,6 @@ Ember._componentManagerCapabilities
 ```js
 import { capabilities } from '@ember/component';
 ```
-### `Ember._setComponentManager`
-**Prefix:** `imsetComponentManager`
-
-**Description**:
-```
-Ember._setComponentManager
-```
-**Generated code**:
-```js
-import { setComponentManager } from '@ember/component';
-```
 ### `Ember._getComponentTemplate`
 **Prefix:** `imgetComponentTemplate`
 
@@ -423,6 +423,17 @@ Ember._getComponentTemplate
 ```js
 import { getComponentTemplate } from '@ember/component';
 ```
+### `Ember._setComponentManager`
+**Prefix:** `imsetComponentManager`
+
+**Description**:
+```
+Ember._setComponentManager
+```
+**Generated code**:
+```js
+import { setComponentManager } from '@ember/component';
+```
 ### `Ember._setComponentTemplate`
 **Prefix:** `imsetComponentTemplate`
 
@@ -433,39 +444,6 @@ Ember._setComponentTemplate
 **Generated code**:
 ```js
 import { setComponentTemplate } from '@ember/component';
-```
-### `Ember._templateOnlyComponent`
-**Prefix:** `imtemplateOnlyComponent`
-
-**Description**:
-```
-Ember._templateOnlyComponent
-```
-**Generated code**:
-```js
-import templateOnlyComponent from '@ember/component/template-only';
-```
-### `Ember._setModifierManager`
-**Prefix:** `imsetModifierManager`
-
-**Description**:
-```
-Ember._setModifierManager
-```
-**Generated code**:
-```js
-import { setModifierManager } from '@ember/modifier';
-```
-### `Ember._modifierManagerCapabilities`
-**Prefix:** `imcapabilities`
-
-**Description**:
-```
-Ember._modifierManagerCapabilities
-```
-**Generated code**:
-```js
-import { capabilities } from '@ember/modifier';
 ```
 ### `Ember.Checkbox`
 **Prefix:** `imCheckbox`
@@ -499,6 +477,17 @@ Ember.Helper.helper
 **Generated code**:
 ```js
 import { helper } from '@ember/component/helper';
+```
+### `Ember._templateOnlyComponent`
+**Prefix:** `imtemplateOnlyComponent`
+
+**Description**:
+```
+Ember._templateOnlyComponent
+```
+**Generated code**:
+```js
+import templateOnlyComponent from '@ember/component/template-only';
 ```
 ### `Ember.TextArea`
 **Prefix:** `imTextArea`
@@ -643,6 +632,94 @@ Ember.DataAdapter
 ```js
 import DataAdapter from '@ember/debug/data-adapter';
 ```
+### `Ember._assertDestroyablesDestroyed`
+**Prefix:** `imassertDestroyablesDestroyed`
+
+**Description**:
+```
+Ember._assertDestroyablesDestroyed
+```
+**Generated code**:
+```js
+import { assertDestroyablesDestroyed } from '@ember/destroyable';
+```
+### `Ember._associateDestroyableChild`
+**Prefix:** `imassociateDestroyableChild`
+
+**Description**:
+```
+Ember._associateDestroyableChild
+```
+**Generated code**:
+```js
+import { associateDestroyableChild } from '@ember/destroyable';
+```
+### `Ember.destroy`
+**Prefix:** `imdestroy`
+
+**Description**:
+```
+Ember.destroy
+```
+**Generated code**:
+```js
+import { destroy } from '@ember/destroyable';
+```
+### `Ember._enableDestroyableTracking`
+**Prefix:** `imenableDestroyableTracking`
+
+**Description**:
+```
+Ember._enableDestroyableTracking
+```
+**Generated code**:
+```js
+import { enableDestroyableTracking } from '@ember/destroyable';
+```
+### `Ember._isDestroyed`
+**Prefix:** `imisDestroyed`
+
+**Description**:
+```
+Ember._isDestroyed
+```
+**Generated code**:
+```js
+import { isDestroyed } from '@ember/destroyable';
+```
+### `Ember._isDestroying`
+**Prefix:** `imisDestroying`
+
+**Description**:
+```
+Ember._isDestroying
+```
+**Generated code**:
+```js
+import { isDestroying } from '@ember/destroyable';
+```
+### `Ember._registerDestructor`
+**Prefix:** `imregisterDestructor`
+
+**Description**:
+```
+Ember._registerDestructor
+```
+**Generated code**:
+```js
+import { registerDestructor } from '@ember/destroyable';
+```
+### `Ember._unregisterDestructor`
+**Prefix:** `imunregisterDestructor`
+
+**Description**:
+```
+Ember._unregisterDestructor
+```
+**Generated code**:
+```js
+import { unregisterDestructor } from '@ember/destroyable';
+```
 ### `Ember.Engine`
 **Prefix:** `imEngine`
 
@@ -763,6 +840,28 @@ Ember.MapWithDefault
 **Generated code**:
 ```js
 import MapWithDefault from '@ember/map/with-default';
+```
+### `Ember._modifierManagerCapabilities`
+**Prefix:** `imcapabilities`
+
+**Description**:
+```
+Ember._modifierManagerCapabilities
+```
+**Generated code**:
+```js
+import { capabilities } from '@ember/modifier';
+```
+### `Ember._setModifierManager`
+**Prefix:** `imsetModifierManager`
+
+**Description**:
+```
+Ember._setModifierManager
+```
+**Generated code**:
+```js
+import { setModifierManager } from '@ember/modifier';
 ```
 ### `Ember.Object`
 **Prefix:** `imEmberObject`
@@ -2116,6 +2215,39 @@ Ember._tracked
 **Generated code**:
 ```js
 import { tracked } from '@glimmer/tracking';
+```
+### `Ember._createCache`
+**Prefix:** `imcreateCache`
+
+**Description**:
+```
+Ember._createCache
+```
+**Generated code**:
+```js
+import { createCache } from '@glimmer/tracking/primitives/cache';
+```
+### `Ember._cacheGetValue`
+**Prefix:** `imgetValue`
+
+**Description**:
+```
+Ember._cacheGetValue
+```
+**Generated code**:
+```js
+import { getValue } from '@glimmer/tracking/primitives/cache';
+```
+### `Ember._cacheIsConst`
+**Prefix:** `imisConst`
+
+**Description**:
+```
+Ember._cacheIsConst
+```
+**Generated code**:
+```js
+import { isConst } from '@glimmer/tracking/primitives/cache';
 ```
 ### `Ember.$`
 **Prefix:** `im$`
