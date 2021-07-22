@@ -19,6 +19,8 @@
 - [Ember.FEATURES.isEnabled](#emberfeaturesisenabled)
 - [Ember.Component](#embercomponent)
 - [Ember._componentManagerCapabilities](#ember_componentmanagercapabilities)
+- [Ember._Input](#ember_input)
+- [Ember._TextArea](#ember_textarea)
 - [Ember._getComponentTemplate](#ember_getcomponenttemplate)
 - [Ember._setComponentManager](#ember_setcomponentmanager)
 - [Ember._setComponentTemplate](#ember_setcomponenttemplate)
@@ -60,6 +62,15 @@
 - [Ember.MapWithDefault](#embermapwithdefault)
 - [Ember._modifierManagerCapabilities](#ember_modifiermanagercapabilities)
 - [Ember._setModifierManager](#ember_setmodifiermanager)
+- [Ember._on](#ember_on)
+- [Ember._helperManagerCapabilities](#ember_helpermanagercapabilities)
+- [Ember._setHelperManager](#ember_sethelpermanager)
+- [Ember._invokeHelper](#ember_invokehelper)
+- [Ember._array](#ember_array)
+- [Ember._concat](#ember_concat)
+- [Ember._fn](#ember_fn)
+- [Ember._get](#ember_get)
+- [Ember._hash](#ember_hash)
 - [Ember.Object](#emberobject)
 - [Ember._action](#ember_action)
 - [Ember.aliasMethod](#emberaliasmethod)
@@ -138,6 +149,10 @@
 - [Ember.NoneLocation](#embernonelocation)
 - [Ember.Route](#emberroute)
 - [Ember.Router](#emberrouter)
+- [Ember.run.backburner](#emberrunbackburner)
+- [Ember.run.hasScheduledTimers](#emberrunhasscheduledtimers)
+- [Ember.run.cancelTimers](#emberruncanceltimers)
+- [Ember.run._getCurrentRunLoop](#emberrun_getcurrentrunloop)
 - [Ember.run.begin](#emberrunbegin)
 - [Ember.run.bind](#emberrunbind)
 - [Ember.run.cancel](#emberruncancel)
@@ -183,6 +198,7 @@
 - [Ember.typeOf](#embertypeof)
 - [Ember.VERSION](#emberversion)
 - [Ember._tracked](#ember_tracked)
+- [Ember._cached](#ember_cached)
 - [Ember._createCache](#ember_createcache)
 - [Ember._cacheGetValue](#ember_cachegetvalue)
 - [Ember._cacheIsConst](#ember_cacheisconst)
@@ -411,6 +427,28 @@ Ember._componentManagerCapabilities
 **Generated code**:
 ```js
 import { capabilities } from '@ember/component';
+```
+### `Ember._Input`
+**Prefix:** `imInput`
+
+**Description**:
+```
+Ember._Input
+```
+**Generated code**:
+```js
+import { Input } from '@ember/component';
+```
+### `Ember._TextArea`
+**Prefix:** `imTextarea`
+
+**Description**:
+```
+Ember._TextArea
+```
+**Generated code**:
+```js
+import { Textarea } from '@ember/component';
 ```
 ### `Ember._getComponentTemplate`
 **Prefix:** `imgetComponentTemplate`
@@ -862,6 +900,105 @@ Ember._setModifierManager
 **Generated code**:
 ```js
 import { setModifierManager } from '@ember/modifier';
+```
+### `Ember._on`
+**Prefix:** `imon`
+
+**Description**:
+```
+Ember._on
+```
+**Generated code**:
+```js
+import { on } from '@ember/modifier';
+```
+### `Ember._helperManagerCapabilities`
+**Prefix:** `imcapabilities`
+
+**Description**:
+```
+Ember._helperManagerCapabilities
+```
+**Generated code**:
+```js
+import { capabilities } from '@ember/helper';
+```
+### `Ember._setHelperManager`
+**Prefix:** `imsetHelperManager`
+
+**Description**:
+```
+Ember._setHelperManager
+```
+**Generated code**:
+```js
+import { setHelperManager } from '@ember/helper';
+```
+### `Ember._invokeHelper`
+**Prefix:** `iminvokeHelper`
+
+**Description**:
+```
+Ember._invokeHelper
+```
+**Generated code**:
+```js
+import { invokeHelper } from '@ember/helper';
+```
+### `Ember._array`
+**Prefix:** `imarray`
+
+**Description**:
+```
+Ember._array
+```
+**Generated code**:
+```js
+import { array } from '@ember/helper';
+```
+### `Ember._concat`
+**Prefix:** `imconcat`
+
+**Description**:
+```
+Ember._concat
+```
+**Generated code**:
+```js
+import { concat } from '@ember/helper';
+```
+### `Ember._fn`
+**Prefix:** `imfn`
+
+**Description**:
+```
+Ember._fn
+```
+**Generated code**:
+```js
+import { fn } from '@ember/helper';
+```
+### `Ember._get`
+**Prefix:** `imget`
+
+**Description**:
+```
+Ember._get
+```
+**Generated code**:
+```js
+import { get } from '@ember/helper';
+```
+### `Ember._hash`
+**Prefix:** `imhash`
+
+**Description**:
+```
+Ember._hash
+```
+**Generated code**:
+```js
+import { hash } from '@ember/helper';
 ```
 ### `Ember.Object`
 **Prefix:** `imEmberObject`
@@ -1667,7 +1804,7 @@ Ember.HistoryLocation
 import HistoryLocation from '@ember/routing/history-location';
 ```
 ### `Ember.LinkComponent`
-**Prefix:** `imLinkComponent`
+**Prefix:** `imLinkTo`
 
 **Description**:
 ```
@@ -1675,7 +1812,7 @@ Ember.LinkComponent
 ```
 **Generated code**:
 ```js
-import LinkComponent from '@ember/routing/link-component';
+import { LinkTo } from '@ember/routing';
 ```
 ### `Ember.Location`
 **Prefix:** `imLocation`
@@ -1720,6 +1857,50 @@ Ember.Router
 **Generated code**:
 ```js
 import EmberRouter from '@ember/routing/router';
+```
+### `Ember.run.backburner`
+**Prefix:** `im_backburner`
+
+**Description**:
+```
+Ember.run.backburner
+```
+**Generated code**:
+```js
+import { _backburner } from '@ember/runloop';
+```
+### `Ember.run.hasScheduledTimers`
+**Prefix:** `im_hasScheduledTimers`
+
+**Description**:
+```
+Ember.run.hasScheduledTimers
+```
+**Generated code**:
+```js
+import { _hasScheduledTimers } from '@ember/runloop';
+```
+### `Ember.run.cancelTimers`
+**Prefix:** `im_cancelTimers`
+
+**Description**:
+```
+Ember.run.cancelTimers
+```
+**Generated code**:
+```js
+import { _cancelTimers } from '@ember/runloop';
+```
+### `Ember.run._getCurrentRunLoop`
+**Prefix:** `im_getCurrentRunLoop`
+
+**Description**:
+```
+Ember.run._getCurrentRunLoop
+```
+**Generated code**:
+```js
+import { _getCurrentRunLoop } from '@ember/runloop';
 ```
 ### `Ember.run.begin`
 **Prefix:** `imbegin`
@@ -2215,6 +2396,17 @@ Ember._tracked
 **Generated code**:
 ```js
 import { tracked } from '@glimmer/tracking';
+```
+### `Ember._cached`
+**Prefix:** `imcached`
+
+**Description**:
+```
+Ember._cached
+```
+**Generated code**:
+```js
+import { cached } from '@glimmer/tracking';
 ```
 ### `Ember._createCache`
 **Prefix:** `imcreateCache`
