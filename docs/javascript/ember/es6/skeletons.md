@@ -77,11 +77,9 @@ Glimmer Component
 ```js
 import Component from '@glimmer/component';
 
-class Component extends Component {
+export default class Component extends Component {
   
 }
-
-export default Component;
 ```
 ### `Classic Component`
 **Prefix:** `component`
