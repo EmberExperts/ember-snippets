@@ -68,8 +68,8 @@
     "@ember-data/rfc395-data": "0.0.4",
     "ember-rfc176-data": "^0.3.17",
     "fs-extra": "^10.0.0",
-    "glob": "^7.1.7",
-    "release-it": "^14.10.0",
-    "vsce": "^1.96.1"
+    "glob": "^7.2.0",
+    "release-it": "^14.11.6",
+    "vsce": "^1.100.2"
   }
 }
