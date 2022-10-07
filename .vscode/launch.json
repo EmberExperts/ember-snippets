@@ -5,19 +5,20 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
-      "request": "launch",
-      "name": "Compile snippets",
-      "program": "${workspaceFolder}/compile.js"
-    },
-    {
-      "name": "Extension",
+      "name": "Lunch extension",
       "type": "extensionHost",
       "request": "launch",
       "runtimeExecutable": "${execPath}",
       "args": [
           "--extensionDevelopmentPath=${workspaceFolder}"
-      ]
-  }
+      ],
+      "preLaunchTask": "npm: build"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Compile snippets",
+      "program": "${workspaceFolder}/compile.js"
+    }
   ]
 }
